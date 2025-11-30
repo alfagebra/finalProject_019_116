@@ -1,0 +1,3029 @@
+{
+  "judul_materi": "Materi PBM (dengan Kuis per Bab)",
+  "rangkuman_topik": [
+    {
+      "topik_id": "H-30",
+      "judul_topik": "Frasa, Kata Majemuk, dan Idiom",
+      "konten": [
+        {
+          "sub_judul": "Cara Menentukan Frasa",
+          "langkah": [
+            "Cek apa inti Frasanya (contoh: 'sepatu baru', intinya 'sepatu').",
+            "Apa kelas kata inti frasa tersebut? (contoh: 'sepatu' adalah nomina).",
+            "Cari pilihan jawaban yang juga merupakan Frasa nominal."
+          ],
+          "tambahan": {
+            "judul": "Cara menentukan kelas kata",
+            "metode": [
+              "Jangan + Verba",
+              "Sangat + Adjektiva",
+              "Bukan + Nomina"
+            ]
+          }
+        },
+        {
+          "sub_judul": "Perbedaan Konsep",
+          "definisi": [
+            {
+              "istilah": "Frasa",
+              "deskripsi": "Gabungan dua kata atau lebih yang bersifat nonpredikatif atau disebut gabungan kata yang mengisi salah satu Fungsi Sintaksis di dalam kalimat.",
+              "sifat": [
+                "Terdiri dari dua kata atau lebih.",
+                "Mengisi salah satu Fungsi sintaksis."
+              ]
+            },
+            {
+              "istilah": "Kata Majemuk",
+              "deskripsi": "Gabungan morfem dasar yang seluruhnya berstatus sebagai kata yang mempunyai pola fonologis, gramatikal, dan semantis yang khusus. Struktur tetap, tidak dapat disisipi kata lain.",
+              "contoh": [
+                "rumah makan",
+                "rumah sakit",
+                "kereta api",
+                "air mata"
+              ]
+            },
+            {
+              "istilah": "Idiom",
+              "deskripsi": "Satuan bahasa (kata, frasa, kalimat) yang maknanya tidak dapat diramalkan dari makna leksikal unsur-unsurnya. Perpaduan dua kata atau lebih yang maknanya tidak dapat ditelusuri dari masing-masing kata.",
+              "contoh": [
+                "banting tulang",
+                "panjang tangan",
+                "tebal telinga",
+                "kambing hitam",
+                "kaki tangan"
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Jenis Frasa",
+          "jenis": [
+            {
+              "nama": "Frasa Nominal",
+              "definisi": "Frasa yang memiliki distribusi yang sama dengan nomina (kata benda).",
+              "contoh": [
+                "baju baru",
+                "mobil mewah",
+                "rumah besar",
+                "sepatu kaca"
+              ]
+            },
+            {
+              "nama": "Frasa Verbal",
+              "definisi": "Frasa yang memiliki distribusi yang sama dengan verba (kata kerja). Dapat ditambahkan 'sedang' atau 'sudah'.",
+              "contoh": [
+                "Sudah datang",
+                "sedang membaca",
+                "mengirim surat",
+                "tidur dengan nyenyak"
+              ]
+            },
+            {
+              "nama": "Frasa Adjektival",
+              "definisi": "Frasa yang memiliki distribusi yang sama dengan adjektiva (kata sifat).",
+              "contoh": [
+                "amat senang",
+                "mahal betul",
+                "agak besar",
+                "paling pintar"
+              ]
+            },
+            {
+              "nama": "Frasa Preposisional",
+              "definisi": "Memiliki preposisi (kata depan) sebagai petunjuk atau unsur penjelas.",
+              "contoh": [
+                "sejak tadi pagi",
+                "tentang masalah itu",
+                "di sebuah rumah",
+                "ke Jakarta"
+              ]
+            },
+            {
+              "nama": "Frasa Adverbial",
+              "definisi": "Frasa yang memiliki distribusi yang sama dengan adverbia (kata keterangan).",
+              "contoh": [
+                "agak sering",
+                "hampir tidak pernah",
+                "baru-baru ini",
+                "tidak biasanya"
+              ]
+            },
+            {
+              "nama": "Frasa Numeralia",
+              "definisi": "Frasa yang memiliki distribusi yang sama dengan numeralia (kata bilangan).",
+              "contoh": [
+                "tiga ekor",
+                "sepuluh helai",
+                "lima botol",
+                "dua saja"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H30_001",
+          "pertanyaan": "Manakah di bawah ini yang merupakan contoh dari Idiom?",
+          "pilihan": [
+            "rumah sakit",
+            "baju baru",
+            "kambing hitam",
+            "sedang membaca"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Idiom adalah gabungan kata yang maknanya tidak bisa diartikan secara harfiah. 'Kambing hitam' adalah idiom yang berarti 'orang yang dipersalahkan'. 'Rumah sakit' adalah kata majemuk."
+        },
+        {
+          "id_pertanyaan": "H30_002",
+          "pertanyaan": "Gabungan kata 'kereta api' termasuk ke dalam jenis apa?",
+          "pilihan": [
+            "Frasa Nominal",
+            "Kata Majemuk",
+            "Idiom",
+            "Frasa Verbal"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "'Kereta api' adalah kata majemuk karena strukturnya tetap, tidak dapat disisipi, dan memiliki makna baru yang spesifik."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-29",
+      "judul_topik": "Memahami Pola Kalimat (S-P-O-Pel-K)",
+      "konten": [
+        {
+          "sub_judul": "Tips Memahami Pola Kalimat",
+          "tips": [
+            "Pahami S dan P.",
+            "P dalam bahasa Indonesia tidak harus verba.",
+            "Pahami perbedaan O dan Pel.",
+            "Pahami verba transitif/intransitif.",
+            "Pel. tidak pernah berupa Frasa preposisional.",
+            "K dapat ditandai dengan kehadiran preposisi.",
+            "K bisa diletakkan di awal, tengah, atau akhir kalimat."
+          ]
+        },
+        {
+          "sub_judul": "Definisi Unsur Kalimat",
+          "unsur": [
+            {
+              "nama": "Subjek (S)",
+              "definisi": "Bagian dari klausa yang menandai apa yang dinyatakan oleh pembicara. (Mencari S: apa/siapa + P?).",
+              "contoh": "Ibu memasak nasi. (S: Siapa yang memasak nasi? -> Ibu)"
+            },
+            {
+              "nama": "Predikat (P)",
+              "definisi": "Bagian dari klausa yang menandai apa yang dinyatakan pembicara tentang subjek. Predikat adjektival, nominal, numeral, dan frasa preposisional tidak butuh objek."
+            },
+            {
+              "nama": "Verba Transitif (Butuh Objek)",
+              "ciri": [
+                "Membutuhkan objek.",
+                "Bisa dipasifkan.",
+                "Berimbuhan: me-, me-kan, me-i, memper-, memper-kan, memper-i."
+              ],
+              "contoh": "Ibu membacakan dongeng. (-> Dongeng dibacakan Ibu.)"
+            },
+            {
+              "nama": "Verba Intransitif (Tidak Butuh Objek)",
+              "ciri": [
+                "Tidak butuh objek.",
+                "Tidak bisa dipasifkan.",
+                "Bisa diikuti Pel. atau K.",
+                "Berimbuhan: ber-, di-, ter-, ke-an."
+              ],
+              "contoh": "Adik bermain bola. / Dia tersandung di lapangan."
+            },
+            {
+              "nama": "Objek (O)",
+              "definisi": "Nomina, Frasa nominal, atau klausa yang melengkapi verba transitif. Objek dapat menjadi subjek dalam pemasifan kalimat dan dapat diganti dengan -nya.",
+              "contoh_klausa": "Dia percaya bahwa temannya tidak bersalah."
+            },
+            {
+              "nama": "Pelengkap (Pel)",
+              "definisi": "Berwujud nomina, frasa verbal, frasa adjektival, frasa preposisional, atau klausa. Tidak dapat menjadi subjek dalam pemasifan. Pasti mengikuti predikat 'adalah', 'merupakan', atau 'menjadi'.",
+              "contoh": "Bahasa adalah sarana utama (Pel.) dalam pengembangan ilmu pengetahuan."
+            },
+            {
+              "nama": "Keterangan (K)",
+              "definisi": "Ditandai dengan preposisi (di, ke, dari, pada, dll) atau penanda waktu. Bisa diletakkan di awal, tengah, atau akhir.",
+              "jenis_keterangan": [
+                "Akibat: Penjahat itu ditembak mati polisi.",
+                "Alasan: Berdasarkan alasan itu, Sidang ditunda.",
+                "Alat: Dia memecahkan batu dengan tangan kosong.",
+                "Asal: Piring ini terbuat dari kaca.",
+                "Kualitas: Dia bekerja seperti kuli.",
+                "Perlawanan: Meskipun bermalas-malasan, ia bisa juga...",
+                "Modalitas: Mustahil mereka tiba malam ini.",
+                "Subjek: Gunung tinggi itu belum pernah didaki orang.",
+                "Objek: Ia sedang mencari kekasih yang pintar dan kaya.",
+                "Sebab: Ia tidak terpilih karena selalu terlambat.",
+                "Syarat: Kalau tidak hujan, saya akan datang."
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H29_001",
+          "pertanyaan": "Dalam kalimat 'Adik bermain bola di teras', unsur 'bola' berkedudukan sebagai?",
+          "pilihan": [
+            "Objek (O)",
+            "Pelengkap (Pel)",
+            "Keterangan (K)",
+            "Subjek (S)"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Predikatnya adalah 'bermain' (verba intransitif, berimbuhan ber-). Verba intransitif tidak membutuhkan Objek. 'Bola' adalah Pelengkap yang melengkapi predikat."
+        },
+        {
+          "id_pertanyaan": "H29_002",
+          "pertanyaan": "Unsur kalimat yang dapat menjadi subjek dalam kalimat pasif adalah...",
+          "pilihan": [
+            "Objek (O)",
+            "Pelengkap (Pel)",
+            "Keterangan (K)",
+            "Subjek (S)"
+          ],
+          "jawaban_benar_index": 0,
+          "pembahasan": "Ciri utama Objek (O) adalah dapat bertransformasi menjadi Subjek (S) jika kalimatnya dipasifkan. Contoh: 'Ibu membaca buku (O)' -> 'Buku (S) dibaca Ibu'."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-28",
+      "judul_topik": "Konjungsi",
+      "konten": [
+        {
+          "jenis": "Konjungsi Koordinatif",
+          "keterangan": "Tidak boleh diletakkan di awal kalimat.",
+          "daftar": [
+            {
+              "kata": "melainkan",
+              "hubungan": "perlawanan"
+            },
+            {
+              "kata": "tetapi",
+              "hubungan": "perlawanan"
+            },
+            {
+              "kata": "padahal",
+              "hubungan": "pertentangan"
+            },
+            {
+              "kata": "sedangkan",
+              "hubungan": "pertentangan"
+            },
+            {
+              "kata": "dan",
+              "hubungan": "penambahan"
+            },
+            {
+              "kata": "atau",
+              "hubungan": "pemilihan"
+            },
+            {
+              "kata": "serta",
+              "hubungan": "pendampingan"
+            },
+            {
+              "kata": "dan/atau",
+              "hubungan": "jumlah atau pilihan"
+            }
+          ]
+        },
+        {
+          "jenis": "Konjungsi Korelatif",
+          "keterangan": "Ada yang di awal kalimat, ada juga yang di tengah kalimat.",
+          "daftar": [
+            "..., baik... maupun...",
+            "Baik... maupun...",
+            "tidak (hanya)..., tetapi (juga)...",
+            "bukan (hanya)..., melainkan (juga)...",
+            "demikian... sehingga...",
+            "sedemikian rupa sehingga...",
+            "Apa (kah)... atau ...",
+            "Entah... entah...",
+            "Jangankan..., ... pun..."
+          ]
+        },
+        {
+          "jenis": "Konjungsi Subordinatif",
+          "keterangan": "Bisa di awal kalimat, tetapi tidak diikuti koma.",
+          "sub_jenis": [
+            {
+              "nama": "Waktu",
+              "daftar": [
+                "sejak, sedari, semenjak (menunjukkan awal peristiwa)",
+                "begitu, demi, ketika, sambil, selagi, selama, sementara, seraya, sewaktu, tatkala (menunjukkan awal peristiwa lain)",
+                "setelah, sebelum, sehabis, selesai, sesudah, seusai (menunjukkan awal peristiwa yang didahului peristiwa lain)",
+                "hingga, sampai (menunjukkan lamanya suatu peristiwa)"
+              ]
+            },
+            {
+              "nama": "Syarat",
+              "daftar": [
+                "asal(kan)",
+                "apabila",
+                "jika",
+                "kalau",
+                "jikalau",
+                "manakala"
+              ]
+            },
+            {
+              "nama": "Pengandaian",
+              "daftar": [
+                "andaikan",
+                "seandainya",
+                "sekiranya",
+                "anda kata",
+                "seumpamanya"
+              ]
+            },
+            {
+              "nama": "Tujuan",
+              "daftar": [
+                "supaya",
+                "agar",
+                "biar"
+              ]
+            },
+            {
+              "nama": "Konsesif",
+              "daftar": [
+                "biarpun",
+                "kendati(pun)",
+                "meski(pun)",
+                "sekalipun",
+                "sungguhpun",
+                "walau(pun)"
+              ]
+            },
+            {
+              "nama": "Perbandingan",
+              "daftar": [
+                "alih-alih",
+                "daripada",
+                "ibarat",
+                "laksana",
+                "seakan-akan",
+                "sebagai",
+                "sebagaimana",
+                "seolah-olah",
+                "seperti"
+              ]
+            },
+            {
+              "nama": "Sebab",
+              "daftar": [
+                "karena",
+                "sebab",
+                "oleh karena",
+                "oleh sebab"
+              ]
+            },
+            {
+              "nama": "Hasil",
+              "daftar": [
+                "maka(nya)",
+                "sehingga",
+                "sampai(-sampai)"
+              ]
+            },
+            {
+              "nama": "Alat",
+              "daftar": [
+                "dengan",
+                "tanpa"
+              ]
+            },
+            {
+              "nama": "Komplementasi",
+              "daftar": [
+                "bahwa"
+              ]
+            },
+            {
+              "nama": "Atributif",
+              "daftar": [
+                "yang"
+              ]
+            }
+          ]
+        },
+        {
+          "jenis": "Konjungsi Antarkalimat",
+          "keterangan": "Menghubungkan satu kalimat dengan kalimat lain. Selalu digunakan di awal kalimat baru, huruf pertama kapital, dan diikuti tanda koma.",
+          "daftar": [
+            "Menyatakan pertentangan: Biarpun demikian,..., Akan tetapi,..., Namun,...",
+            "Menyatakan kelanjutan: Kemudian,..., Sesudah itu,..., Setelah itu,..., Selanjutnya,..., Berikutnya,...",
+            "Menyatakan hal lain di luar: Tambahan pula,..., Lagi pula,..., Selain itu,...",
+            "Menyatakan kebalikan: Sebaliknya,...",
+            "Menyatakan keadaan sebenarnya: Sesungguhnya,..., Bahwasanya,...",
+            "Menyatakan keekslusifan dan keinklusifan: Kecuali itu,..., Disamping itu,...",
+            "Menyatakan konsekuensi: Dengan demikian,...",
+            "Menyatakan akibat: Oleh karena itu,..., Oleh sebab itu,..."
+          ]
+        },
+        {
+          "sub_judul": "Pedoman Tanda Koma dan Konjungsi",
+          "didahului_koma": [
+            "...bahkan...",
+            "...kecuali...",
+            "...melainkan...",
+            "...padahal...",
+            "...sedangkan...",
+            "...sementara...",
+            "...seperti...",
+            "...tetapi...",
+            "...yaitu...",
+            "...yakni..."
+          ],
+          "tidak_didahului_koma": [
+            "...agar...",
+            "bahwa...",
+            "dengan...",
+            "Jika...",
+            "karena...",
+            "...maka...",
+            "meskipun...",
+            "sampai...",
+            "sehingga...",
+            "...sejak...",
+            "...sekalipun...",
+            "supaya...",
+            "walaupun..."
+          ],
+          "diakhiri_koma_antarkalimat": [
+            "Akan tetapi,...",
+            "Akhirnya,...",
+            "Akibatnya,...",
+            "Artinya,...",
+            "Jika demikian,...",
+            "Kalau begitu,...",
+            "Lagi pula,...",
+            "Sebaliknya,...",
+            "Sebelumnya,...",
+            "Sebenarnya,...",
+            "Selain itu,...",
+            "Biarpun begitu,...",
+            "Contohnya,...",
+            "Dalam hal ini,...",
+            "Dengan demikian,...",
+            "Di samping itu,...",
+            "Jadi,...",
+            "Karena itu,...",
+            "Meskipun demikian,...",
+            "Misalnya,...",
+            "Namun,...",
+            "Oleh karena itu,...",
+            "Walaupun demikian,...",
+            "Pada dasarnya,...",
+            "Sebagai kesimpulan,...",
+            "Sementara itu,...",
+            "Sesungguhnya,..."
+          ],
+          "catatan_penting": [
+            "'tetapi' selalu di tengah kalimat.",
+            "'namun' selalu di awal kalimat."
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H28_001",
+          "pertanyaan": "Konjungsi seperti 'agar' dan 'supaya' digunakan untuk menyatakan hubungan...",
+          "pilihan": [
+            "Waktu",
+            "Syarat",
+            "Tujuan",
+            "Sebab"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Konjungsi subordinatif 'supaya', 'agar', dan 'biar' digunakan untuk menyatakan hubungan tujuan."
+        },
+        {
+          "id_pertanyaan": "H28_002",
+          "pertanyaan": "Manakah konjungsi antarkalimat yang digunakan untuk menyatakan 'akibat'?",
+          "pilihan": [
+            "Akan tetapi,...",
+            "Oleh karena itu,...",
+            "Selanjutnya,...",
+            "Dengan demikian,..."
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "'Oleh karena itu,...' dan 'Oleh sebab itu,...' digunakan untuk menyatakan akibat. 'Dengan demikian,...' menyatakan konsekuensi/simpulan."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-27",
+      "judul_topik": "Kaidah K-P-S-T",
+      "konten": [
+        {
+          "aturan_id": "Aturan 1 (Luluh)",
+          "deskripsi": "Aturan peluluhan untuk imbuhan me-/pe- jika bertemu huruf awal K, P, S, T yang diikuti vokal.",
+          "rumus": [
+            {
+              "formula": "me-/pe- + /k/ + vokal = meng-/peng-",
+              "contoh": [
+                "me- + kabar + -kan = mengabarkan",
+                "me- + kuasa + -i = menguasai",
+                "pe- + kabar + -an = pengabaran",
+                "pe- + kuasa + -an = penguasaan"
+              ],
+              "pengecualian_tidak_luluh": [
+                "me- + kerja + -kan = mengerjakan",
+                "me- + kuat + -kan = menguatkan",
+                "pe- + kerja + -an = pengerjaan",
+                "pe- + kuat + -an = penguatan"
+              ]
+            },
+            {
+              "formula": "me-/pe- + /p/ + vokal = mem-/pem-",
+              "contoh": [
+                "me- + pasti + -kan = memastikan",
+                "me- + pusat + -kan = memusatkan",
+                "pe- + pasti + -an = pemastian",
+                "pe- + pusat + -an = pemusatan"
+              ],
+              "pengecualian_tidak_luluh": [
+                "me- + posisi + -kan = memosisikan",
+                "me- + padam + -kan = memadamkan",
+                "pe- + posisi + -an = pemosisian",
+                "pe- + padam + -an = pemadaman"
+              ],
+              "pengecualian_khusus": [
+                "me + punya + i = mempunyai"
+              ]
+            },
+            {
+              "formula": "me-/pe- + /s/ + vokal = meny-/peny-",
+              "contoh": [
+                "me- + sapu = menyapu",
+                "me- + suara + -kan = menyuarakan",
+                "me- + suci + -kan = menyucikan",
+                "pe- + sapu = penyapu",
+                "pe- + suara + -an = penyuaraan",
+                "pe- + suci + -an = penyucian"
+              ],
+              "pengecualian_tidak_luluh": [
+                "me- + samar + -kan = menyamarkan",
+                "pe- + samar + -an = penyamaran"
+              ]
+            },
+            {
+              "formula": "me-/pe- + /t/ + vokal = men-/pen-",
+              "contoh": [
+                "me- + tambah = menambah",
+                "me- + tulis + -kan = menuliskan",
+                "me- + tarik = menarik",
+                "pe- + tambah = penambah",
+                "pe- + tulis + -an = penulisan",
+                "pe- + tarik = penarik"
+              ],
+              "pengecualian_tidak_luluh": [
+                "me- + tukar + -kan = menukarkan",
+                "pe- + tukar + -an = penukaran"
+              ]
+            }
+          ]
+        },
+        {
+          "aturan_id": "Aturan 2 (Tidak Luluh)",
+          "deskripsi": "Aturan untuk imbuhan pe- jika bertemu huruf /p/ yang diikuti konsonan /r/.",
+          "rumus": [
+            {
+              "formula": "pe- + /p/ + /r/ = pem- (huruf /p/ tidak luluh)",
+              "contoh_baku": [
+                "pe- + protes = pemrotes",
+                "pe- + proses = pemroses",
+                "pe- + program = pemrogram",
+                "pe- + prakarsa = pemrakarsa",
+                "pe- + prakiraan = pemrakiraan",
+                "pe- + produksi = pemroduksi",
+                "pe- + propaganda = pemropaganda"
+              ],
+              "catatan": "Bentuk 'penger-' (misal: 'pemroses' bukan 'pengeroses') adalah tidak baku jika /p/ hilang."
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H27_001",
+          "pertanyaan": "Berdasarkan kaidah K-P-S-T, bentuk yang TEPAT dari 'me-' + 'sapu' adalah...",
+          "pilihan": [
+            "mesapu",
+            "mensapu",
+            "memapu",
+            "menyapu"
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Aturan luluh: me- + /s/ + vokal = meny-. Huruf /s/ luluh menjadi /ny/."
+        },
+        {
+          "id_pertanyaan": "H27_002",
+          "pertanyaan": "Bentuk yang TEPAT dari 'pe-' + 'protes' adalah...",
+          "pilihan": [
+            "pemrotes",
+            "pengrotes",
+            "peprotes",
+            "pemprotes"
+          ],
+          "jawaban_benar_index": 0,
+          "pembahasan": "Aturan 2: pe- + /p/ + /r/ (konsonan) = pem-. Huruf /p/ TIDAK luluh karena diikuti oleh konsonan /r/."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-26",
+      "judul_topik": "Penggunaan Huruf Miring",
+      "konten": [
+        {
+          "judul_penggunaan": "Menuliskan Judul dan Nama",
+          "aturan": "Huruf miring digunakan untuk menuliskan:",
+          "daftar": [
+            "Judul buku",
+            "Judul Film",
+            "Judul album lagu",
+            "Judul acara televisi",
+            "Judul siniar (podcast)",
+            "Judul lakon",
+            "Nama media massa (surat kabar, majalah, situs berita)"
+          ],
+          "contoh": [
+            "Saya sudah membaca novel *Laskar Pelangi* karangan Andrea Hirata.",
+            "Ibu bilang bahwa sewaktu kecil ia senang membaca majalah *Bobo*.",
+            "Acara kampus kami dimuat di *detikcom*.",
+            "Berita itu muncul dalam surat kabar *Kompas*.",
+            "Siniar *Fauzan Talks* mengangkat tema kebangsaan.",
+            "Taylor Swift meluncurkan album *Red Ink*."
+          ]
+        },
+        {
+          "judul_penggunaan": "Menegaskan atau Mengkhususkan",
+          "aturan": "Huruf miring digunakan untuk menegaskan atau mengkhususkan huruf, bagian kata, kata, atau kelompok kata dalam kalimat.",
+          "contoh": [
+            "Huruf terakhir kata *abad* adalah *d*.",
+            "Imbuhan *ber-* pada kata *berjasa* bermakna 'memiliki'.",
+            "Buatlah kalimat dengan menggunakan ungkapan *lepas tangan*!"
+          ]
+        },
+        {
+          "judul_penggunaan": "Bahasa Daerah atau Asing",
+          "aturan": "Huruf miring digunakan untuk menuliskan kata atau ungkapan dalam bahasa daerah atau bahasa asing.",
+          "contoh": [
+            "Nama ilmiah buah manggis adalah *Garcinia mangostana*.",
+            "Ungkapan *tut wuri handayani* merupakan semboyan pendidikan.",
+            "Istilah *mens sana in corpore sano* sering digunakan dalam bidang olahraga."
+          ],
+          "pengecualian": "Nama diri (orang, lembaga, organisasi, merek dagang) dalam bahasa asing atau daerah tidak ditulis dengan huruf miring.",
+          "contoh_pengecualian": [
+            "United Nations",
+            "Youtube",
+            "Apple",
+            "Manchester City"
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H26_001",
+          "pertanyaan": "Manakah di bawah ini yang penulisannya TIDAK perlu menggunakan huruf miring?",
+          "pilihan": [
+            "Nama ilmiah: *Garcinia mangostana*",
+            "Nama lembaga: United Nations",
+            "Judul buku: *Laskar Pelangi*",
+            "Situs berita: *detikcom*"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Nama diri, seperti nama orang, lembaga, atau organisasi dalam bahasa asing tidak ditulis dengan huruf miring. Yang ditulis miring adalah judul, nama media massa, dan istilah/kata asing."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-25",
+      "judul_topik": "Nama Diri vs. Nama Jenis (Kapitalisasi Geografi)",
+      "konten": [
+        {
+          "definisi": [
+            {
+              "istilah": "Nama Diri",
+              "deskripsi": "Nama orang, lembaga, organisasi, acara, benda tertentu."
+            },
+            {
+              "istilah": "Nama Jenis",
+              "deskripsi": "Nomina yang menunjukkan jenis umum benda atau konsep."
+            }
+          ]
+        },
+        {
+          "sub_judul": "Nama Jenis dengan Nama Geografi (Ilmu Biologi)",
+          "aturan": "Dalam Ilmu biologi, nama jenis (yang memiliki nama Latin) ditulis dengan huruf kecil semua, walaupun mengandung nama geografi.",
+          "contoh": [
+            "beruang kutub (Ursus maritimus)",
+            "harimau siberia (Panthera tigris altaica)",
+            "gajah sumatra (Elephas maximus sumatranus)",
+            "monyet jepang (Macaca fuscata)",
+            "badak jawa (Rhinoceros sondaicus)",
+            "kacang bogor (Voandzeia subterranea)",
+            "kacang dieng (Vicia faba)",
+            "jeruk bali (Citrus maxima)",
+            "jeruk garut (Citrus grandis)",
+            "terung bali (Solanum cryphopersicum)",
+            "terung belanda (Cyphomandra betacea)"
+          ]
+        },
+        {
+          "sub_judul": "Nama Jenis dengan Nama Geografi (Non-Biologi)",
+          "aturan": "Untuk nama jenis non-biologi, dapat diketahui dengan menyejajarkannya dengan jenis lain dalam kelompoknya. Jika mengandung nama geografi tapi merupakan nama jenis, ditulis huruf kecil.",
+          "contoh": [
+            {
+              "kelompok": "gula",
+              "jenis": [
+                "gula jawa",
+                "gula pasir",
+                "gula tebu",
+                "gula aren",
+                "gula kelapa"
+              ]
+            },
+            {
+              "kelompok": "tahu",
+              "jenis": [
+                "tahu isi",
+                "tahu sumedang",
+                "tahu bacem",
+                "tahu gunting",
+                "tahu kupat"
+              ]
+            },
+            {
+              "kelompok": "batik",
+              "nama_geografi": [
+                "batik Solo",
+                "batik Cirebon",
+                "batik Betawi",
+                "batik Madura"
+              ],
+              "nama_jenis_lain": [
+                "batik tulis",
+                "batik cap",
+                "batik sablon",
+                "batik lurik"
+              ]
+            },
+            {
+              "kelompok": "soto",
+              "nama_geografi": [
+                "soto Lamongan",
+                "Soto Padang",
+                "soto Banjar",
+                "Soto Bandung"
+              ],
+              "nama_jenis_lain": [
+                "soto ayam",
+                "soto mi",
+                "soto daging",
+                "soto babat"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H25_001",
+          "pertanyaan": "Manakah penulisan nama jenis yang TEPAT sesuai aturan kapitalisasi geografi?",
+          "pilihan": [
+            "Gajah Sumatra",
+            "jeruk bali",
+            "Kota Bandung",
+            "Soto Padang"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Nama jenis biologi (yang memiliki nama Latin) ditulis dengan huruf kecil semua, walaupun mengandung nama geografi. Contoh: 'gajah sumatra', 'jeruk bali'."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-24",
+      "judul_topik": "Tanda Hubung (-)",
+      "konten": [
+        {
+          "judul_penggunaan": "1. Pemenggalan Kata di Akhir Baris",
+          "contoh": [
+            "di-terapkan juga...",
+            "mem-budidayakan..."
+          ]
+        },
+        {
+          "judul_penggunaan": "2. Menyambung Unsur Kata Ulang",
+          "contoh": [
+            "anak-anak",
+            "berulang-ulang",
+            "kemerah-merahan",
+            "mengorek-orek"
+          ]
+        },
+        {
+          "judul_penggunaan": "3. Menyambung Angka, Ejaan, dan Skor",
+          "contoh": [
+            "20-06-2023 (tanggal)",
+            "i-b-u-k-o-t-a (ejaan)",
+            "3-0 (skor)"
+          ]
+        },
+        {
+          "judul_penggunaan": "4. Menjelaskan Hubungan Bagian Kata",
+          "contoh": [
+            "ber-evolusi vs. be-revolusi",
+            "meng-urus (merawat) vs. me-ngurus (jadi kurus)",
+            "dua-puluh-lima-ribuan (25 x 1.000)",
+            "dua-puluh lima-ribuan (20 x 5.000)"
+          ]
+        },
+        {
+          "judul_penggunaan": "5. Menandai Dua Unsur Satu Kesatuan",
+          "contoh": [
+            "suami-istri",
+            "Soekarno-Hatta",
+            "Konferensi Asia-Afrika"
+          ]
+        },
+        {
+          "judul_penggunaan": "6. Merangkaikan Huruf Kapital/Angka dengan Nonkapital/Huruf",
+          "contoh": [
+            "se-Indonesia",
+            "peringkat ke-2",
+            "tahun 1990-an",
+            "hari-H",
+            "ber-KTP",
+            "di-SK-kan",
+            "Ciptaan-Nya",
+            "S-1",
+            "KTP-mu"
+          ]
+        },
+        {
+          "judul_penggunaan": "7. Merangkaikan Unsur Bahasa Indonesia dengan Bahasa Asing/Daerah/Slang",
+          "contoh": [
+            "ber-pariban (bahasa Batak)",
+            "mem-back up (bahasa Inggris)",
+            "di-tafsil (bahasa Arab)",
+            "di-bokisin (slang)"
+          ]
+        },
+        {
+          "judul_penggunaan": "8. Menandai Imbuhan/Bentuk Terikat sebagai Objek Bahasan",
+          "contoh": [
+            "Imbuhan pe- pada pekerja...",
+            "Bentuk terikat pasca- berasal dari..."
+          ]
+        },
+        {
+          "judul_penggunaan": "Pengecualian (Tidak Dipakai)",
+          "aturan": "Tanda hubung tidak digunakan di antara huruf dan angka jika angka tersebut melambangkan jumlah huruf.",
+          "contoh": [
+            "P4TK (Pusat Pengembangan dan Pemberdayaan Pendidik...)",
+            "P3K (pertolongan pertama pada kecelakaan)"
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H24_001",
+          "pertanyaan": "Penulisan 'peringkat ke 2' yang TEPAT adalah...",
+          "pilihan": [
+            "peringkat ke 2",
+            "peringkat ke-2",
+            "peringkat ke2",
+            "peringkat ke II"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Tanda hubung (-) digunakan untuk merangkaikan unsur yang berbeda, yaitu di antara huruf dan angka. Contoh: peringkat ke-2, tahun 1990-an, S-1."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-23/Lainnya",
+      "judul_topik": "Tanda Baca (Pisah, Petik, Petik Tunggal)",
+      "konten": [
+        {
+          "tanda_baca": "Tanda Pisah (—)",
+          "keterangan": "Bentuknya lebih panjang dari tanda hubung (-).",
+          "penggunaan": [
+            {
+              "aturan": "1. Mengapit keterangan atau penjelasan yang bukan bagian utama kalimat.",
+              "contoh": [
+                "Kemerdekaan bangsa itu—saya yakin akan tercapai—diperjuangkan oleh bangsa itu sendiri.",
+                "Keberhasilan itu—kita sependapat—dapat dicapai jika kita mau berusaha keras."
+              ]
+            },
+            {
+              "aturan": "2. Mengapit keterangan yang dapat saling menggantikan dengan bagian yang dijelaskan (apositif).",
+              "contoh": [
+                "Soekarno-Hatta—Proklamator Kemerdekaan RI—diabadikan menjadi nama jalan...",
+                "Gerakan Pengutamaan Bahasa Indonesia—amanat Sumpah Pemuda—harus terus digelorakan."
+              ]
+            },
+            {
+              "aturan": "3. Di antara dua bilangan, tanggal, atau tempat yang berarti 'sampai dengan' atau 'sampai ke'.",
+              "contoh": [
+                "Tahun 2020—2023",
+                "Tanggal 8—14 Mei 2023",
+                "Senin—Jumat",
+                "Surabaya—Yogyakarta"
+              ]
+            }
+          ]
+        },
+        {
+          "tanda_baca": "Tanda Petik (\"...\")",
+          "penggunaan": [
+            {
+              "aturan": "1. Mengapit petikan langsung dari pembicaraan, naskah, atau bahan tertulis lain.",
+              "contoh": [
+                "\"Merdeka atau mati!\" seru Bung Tomo dalam pidatonya.",
+                "\"Kerjakan tugas ini sekarang,\" perintah atasannya, \"karena besok akan dibahas dalam rapat!\""
+              ]
+            },
+            {
+              "aturan": "2. Mengapit judul (puisi, lagu, artikel, naskah, bab buku, pidato/khotbah) atau tema/subtema yang terdapat di dalam kalimat.",
+              "contoh": [
+                "Puisi \"Pahlawanku\" terdapat pada halaman 125 buku itu.",
+                "Raisa menyanyikan lagu \"Mantan Terindah\"."
+              ]
+            },
+            {
+              "aturan": "3. Mengapit istilah ilmiah yang kurang dikenal atau kata yang mempunyai arti khusus.",
+              "contoh": [
+                "\"Peladen\" komputer ini sudah tidak berfungsi.",
+                "Dilarang memberikan \"amplop\" kepada petugas!"
+              ]
+            }
+          ]
+        },
+        {
+          "tanda_baca": "Tanda Petik Tunggal ('...')",
+          "penggunaan": [
+            {
+              "aturan": "1. Mengapit petikan yang terdapat dalam petikan lain.",
+              "contoh": [
+                "Tanya dia, \"Kaudengar bunyi 'kring-kring' tadi?\"",
+                "\"Kita bangga karena lagu 'Indonesia Raya' berkumandang di arena Asian Games,\" kata Ketua KONI."
+              ]
+            },
+            {
+              "aturan": "2. Mengapit makna, padanan, atau penjelasan kata atau ungkapan (termasuk bahasa daerah/asing).",
+              "contoh": [
+                "tergugat 'yang digugat'",
+                "retina 'dinding mata sebelah dalam'",
+                "noken 'tas khas Papua'",
+                "marsiadap ari 'saling bantu'",
+                "self-quarantine 'karantina mandiri'"
+              ],
+              "catatan_perbedaan": "Tanda petik tunggal untuk makna/terjemahan, Tanda kurung (...) untuk keterangan tambahan."
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H23_001",
+          "pertanyaan": "Tanda baca yang digunakan untuk mengapit judul lagu atau judul bab buku di dalam kalimat adalah...",
+          "pilihan": [
+            "Tanda Petik Tunggal ('...')",
+            "Tanda Petik (\"...\")",
+            "Tanda Pisah (—)",
+            "Tanda Kurung (...)"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Tanda petik (\"...\") digunakan untuk mengapit judul puisi, lagu, artikel, naskah, atau bab buku yang terdapat di dalam kalimat."
+        },
+        {
+          "id_pertanyaan": "H23_002",
+          "pertanyaan": "Dalam kalimat 'Dia bertanya, \"Kaudengar bunyi 'kring-kring' tadi?\"', tanda petik tunggal ('...') digunakan untuk...",
+          "pilihan": [
+            "Mengapit makna",
+            "Mengapit petikan yang terdapat dalam petikan lain",
+            "Mengapit istilah ilmiah",
+            "Mengapit judul lagu"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Tanda petik tunggal digunakan untuk mengapit petikan yang terdapat dalam petikan lain (petikan di dalam petikan)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-22",
+      "judul_topik": "Partikel",
+      "konten": [
+        {
+          "partikel": "-lah",
+          "aturan": "Ditulis serangkai.",
+          "contoh": [
+            "Bacalah buku itu baik-baik!",
+            "Hanya kepada Tuhanlah kita memohon perlindungan."
+          ]
+        },
+        {
+          "partikel": "-kah",
+          "aturan": "Ditulis serangkai.",
+          "contoh": [
+            "Apakah yang tersirat dalam surat itu?",
+            "Siapakah gerangan orang itu?"
+          ]
+        },
+        {
+          "partikel": "per",
+          "aturan": "Ditulis terpisah.",
+          "contoh": [
+            "Mereka masuk ke kelas satu per satu.",
+            "Harga kain itu Rp 50.000,00 per meter."
+          ]
+        },
+        {
+          "partikel": "pun",
+          "aturan": "Ditulis terpisah.",
+          "contoh": [
+            "Apa pun masalah yang mengadang, dia dapat mengatasinya.",
+            "Jika kita hendak pulang tengah malam pun, kendaraan masih tersedia."
+          ],
+          "pengecualian": "14 bentuk 'pun' yang merupakan konjungsi ditulis serangkai.",
+          "daftar_serangkai": [
+            "adapun",
+            "andaipun",
+            "ataupun",
+            "bagaimanapun",
+            "biarpun",
+            "jikapun",
+            "kalaupun",
+            "kendatipun",
+            "maupun",
+            "meskipun",
+            "sekalipun",
+            "sementangpun",
+            "sungguhpun",
+            "walaupun"
+          ],
+          "perbedaan": [
+            {
+              "frasa": "sekali pun (terpisah)",
+              "makna": "Walaupun sekali.",
+              "contoh": "Tidak sekali pun dia melakukan kesalahan."
+            },
+            {
+              "frasa": "sekalipun (serangkai)",
+              "makna": "Walaupun/Meskipun.",
+              "contoh": "Sekalipun bersalah, dia tak mendapat hukuman."
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H22_001",
+          "pertanyaan": "Manakah penulisan partikel 'pun' yang TEPAT?",
+          "pilihan": [
+            "adapun",
+            "Siapa pun",
+            "Meskipun",
+            "Walau pun"
+          ],
+          "jawaban_benar_index": 0,
+          "pembahasan": "'adapun' adalah satu dari 14 bentuk 'pun' yang merupakan konjungsi dan harus ditulis serangkai. 'Siapa pun' harus dipisah, 'Meskipun' harus serangkai, 'Walaupun' harus serangkai."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-21",
+      "judul_topik": "Kata Bentuk Terikat",
+      "konten": [
+        {
+          "aturan": "Kata yang memiliki bentuk terikat ditulis serangkai.",
+          "daftar_bentuk_terikat": [
+            "a- (asusila)",
+            "ab- (abnormal)",
+            "adi- (adidaya)",
+            "aero- (aerodinamika)",
+            "alo- (alofon)",
+            "ambi- (ambivalen)",
+            "amfi- (amfiteater)",
+            "antar- (antarkota)",
+            "ante- (antemeridiem)",
+            "anti- (antibiotik)",
+            "apo- (apoenzim)",
+            "auto- (autodidak)",
+            "bi- (bilateral)",
+            "bio- (biokimia)",
+            "catur- (caturwulan)",
+            "dasa- (dasawarsa)",
+            "de- (demoralisasi)",
+            "dia- (diatomik)",
+            "dis- (diskredit)",
+            "eka- (ekabahasa)",
+            "eks- (eksklusif)",
+            "ekstra- (ekstrakurikuler)",
+            "endo- (endodermis)",
+            "hetero- (heterogen)",
+            "homo- (homofon)",
+            "in- (inkonvensional)",
+            "infra- (infrastruktur)",
+            "inter- (internasional)",
+            "intra- (intrakalimat)",
+            "intro- (introspeksi)",
+            "iso- (isometri)",
+            "kontra- (kontraindikasi)",
+            "maha- (mahakarya)",
+            "non- (nonblok)",
+            "pasca- (pascasarjana)",
+            "pra- (prasejarah)",
+            "sub- (subbagian)",
+            "super- (supercepat)",
+            "tak- (taktentu)"
+          ]
+        },
+        {
+          "sub_judul": "Pengecualian dan Catatan",
+          "aturan_pengecualian": [
+            {
+              "bentuk": "maha-",
+              "aturan": "Bentuk terikat 'maha' dan kata dasar/berimbuhan yang mengacu pada nama atau sifat Tuhan ditulis terpisah dengan huruf awal kapital.",
+              "contoh": [
+                "Yang Maha Esa",
+                "Tuhan Yang Maha Kuasa",
+                "Tuhan Yang Maha Pengampun"
+              ]
+            },
+            {
+              "bentuk": "tak-",
+              "aturan": "Bentuk singkat dari 'tidak', memiliki makna 'tidak'.",
+              "contoh": [
+                "unjust -> takadil",
+                "indirect -> tak langsung",
+                "impure -> takmurni",
+                "irregular -> takteratur",
+                "unsure -> takyakin",
+                "disagree -> taksetuju"
+              ]
+            },
+            {
+              "bentuk": "Bentuk Terikat + Huruf Kapital",
+              "aturan": "Kata yang diawali huruf kapital dan mendapat bentuk terikat dirangkaikan dengan tanda hubung (-).",
+              "contoh": [
+                "non-Indonesia",
+                "pan-Afrika",
+                "pro-Barat",
+                "anti-PKI",
+                "non-ASEAN",
+                "pasca-Orba"
+              ]
+            },
+            {
+              "bentuk": "Bentuk Terikat + Huruf Miring",
+              "aturan": "Kata yang ditulis dengan huruf miring dan mendapat bentuk terikat dirangkaikan dengan tanda hubung (-).",
+              "contoh": [
+                "anti-mainstream",
+                "pasca-reshuffle",
+                "pra-Aufklaerung"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H21_001",
+          "pertanyaan": "Penulisan bentuk terikat 'anti' dengan 'PKI' yang TEPAT adalah...",
+          "pilihan": [
+            "anti PKI",
+            "anti-PKI",
+            "antiPKI",
+            "AntiPKI"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Kata yang diawali huruf kapital (nama diri seperti 'PKI') dan mendapat bentuk terikat ('anti-') harus dirangkaikan dengan tanda hubung (-)."
+        },
+        {
+          "id_pertanyaan": "H21_002",
+          "pertanyaan": "Penulisan sifat Tuhan yang TEPAT adalah...",
+          "pilihan": [
+            "Tuhan Yang MahaEsa",
+            "Tuhan Yang Maha Kuasa",
+            "Tuhan yang maha esa",
+            "Tuhan Yang Mahakuasa"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Bentuk terikat 'maha' yang mengacu pada sifat Tuhan ditulis terpisah dan dengan huruf awal kapital. Pengecualian adalah 'Yang Maha Esa'."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-20",
+      "judul_topik": "Akronim dan Singkatan",
+      "konten": [
+        {
+          "definisi": [
+            {
+              "istilah": "Akronim",
+              "deskripsi": "Singkatan yang berupa gabungan huruf atau suku kata atau bagian lain yang ditulis dan dilafalkan sebagai kata yang wajar.",
+              "contoh": [
+                "ponsel",
+                "sembako",
+                "Kemendikbud",
+                "BIN",
+                "MAN",
+                "PAUD",
+                "SIM",
+                "PASI",
+                "LAN",
+                "Abnon",
+                "Bulog",
+                "Kalteng",
+                "Unpad",
+                "iptek",
+                "pemilu",
+                "puskesmas",
+                "rapim"
+              ]
+            },
+            {
+              "istilah": "Singkatan",
+              "deskripsi": "Dilafalkan dengan dieja huruf per huruf.",
+              "contoh": [
+                "KTP",
+                "PT",
+                "SD",
+                "UN"
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Aturan Penulisan Singkatan",
+          "aturan": [
+            {
+              "id": 1,
+              "deskripsi": "Singkatan nama orang, gelar, sapaan, atau pangkat diikuti tanda titik di setiap unsur.",
+              "contoh": [
+                "A. H. Nasution",
+                "H. Hamid",
+                "dr.",
+                "Dr.",
+                "M. Hum.",
+                "S.E.",
+                "Sdr. Kenzy"
+              ]
+            },
+            {
+              "id": 2,
+              "deskripsi": "Singkatan nama orang dalam bentuk inisial ditulis tanpa tanda titik.",
+              "contoh": [
+                "SBY",
+                "IDN"
+              ]
+            },
+            {
+              "id": 3,
+              "deskripsi": "Singkatan (termasuk akronim) dari huruf awal setiap kata ditulis huruf kapital tanpa tanda titik.",
+              "contoh": [
+                "KTP",
+                "PT",
+                "SD",
+                "UN",
+                "BIN",
+                "MAN",
+                "NIP",
+                "PAUD",
+                "SIM",
+                "PASI",
+                "LAN"
+              ]
+            },
+            {
+              "id": 4,
+              "deskripsi": "Singkatan lebih dari dua huruf dalam dokumen/surat diikuti tanda titik.",
+              "contoh": [
+                "dkk.",
+                "dll.",
+                "dsb.",
+                "dst.",
+                "hlm.",
+                "ttd.",
+                "Yth."
+              ]
+            },
+            {
+              "id": 5,
+              "deskripsi": "Singkatan dua huruf dalam dokumen/surat diikuti tanda titik pada setiap huruf.",
+              "contoh": [
+                "a.n. (atas nama)",
+                "d.a. (dengan alamat)",
+                "s.d. (sampai dengan)",
+                "u.b. (untuk beliau)",
+                "u.p. (untuk perhatian)"
+              ]
+            },
+            {
+              "id": 6,
+              "deskripsi": "Singkatan dalam penulisan alamat (dua huruf atau lebih) diakhiri tanda titik.",
+              "contoh": [
+                "Gd. Tabrani",
+                "Jl. Bintara",
+                "Gg. Jane",
+                "Kav. 5",
+                "Km. 57",
+                "Lt. 2",
+                "No. 9"
+              ]
+            },
+            {
+              "id": 7,
+              "deskripsi": "Singkatan satuan ukuran, takaran, timbangan; lambang kimia tidak diikuti tanda titik.",
+              "contoh": [
+                "KVA",
+                "km",
+                "kg",
+                "l",
+                "Cu"
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Aturan Penulisan Akronim",
+          "aturan": [
+            {
+              "id": 8,
+              "deskripsi": "Akronim nama diri (gabungan huruf dan suku kata, atau gabungan suku kata) ditulis dengan huruf awal kapital.",
+              "contoh": [
+                "Abnon (Abang None)",
+                "Bulog (Badan Urusan Logistik)",
+                "Kalteng (Kalimantan Tengah)",
+                "Unpad (Universitas Padjadjaran)"
+              ]
+            },
+            {
+              "id": 9,
+              "deskripsi": "Akronim bukan nama diri (gabungan huruf dan suku kata, atau gabungan suku kata) ditulis dengan huruf nonkapital.",
+              "contoh": [
+                "iptek (ilmu pengetahuan dan teknologi)",
+                "pemilu (pemilihan umum)",
+                "puskesmas (pusat kesehatan masyarakat)",
+                "rapim (rapat pimpinan)"
+              ],
+              "catatan_kapitalisasi": "Jika akronim bukan nama diri digunakan dalam konteks nama diri (misal nama lembaga), ia dikapitalisasi. Contoh: 'Saya pergi ke puskesmas.' vs 'Saya pergi ke Puskesmas Kelurahan Pondok Kelapa.'"
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H20_001",
+          "pertanyaan": "'iptek' (ilmu pengetahuan dan teknologi) adalah akronim bukan nama diri. Penulisan yang TEPAT adalah...",
+          "pilihan": [
+            "IPTEK",
+            "Iptek",
+            "iptek",
+            "I.P.T.E.K."
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Akronim bukan nama diri yang berupa gabungan suku kata atau gabungan huruf dan suku kata ditulis dengan huruf nonkapital (kecil semua)."
+        },
+        {
+          "id_pertanyaan": "H20_002",
+          "pertanyaan": "Manakah singkatan gelar yang TEPAT?",
+          "pilihan": [
+            "S.E",
+            "SE.",
+            "S.E.",
+            "S E"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Singkatan nama orang, gelar, sapaan, atau pangkat diikuti dengan tanda titik di setiap unsur singkatan itu. Contoh: S.E. (Sarjana Ekonomi)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-19",
+      "judul_topik": "Penulisan Unsur Gabungan (Kata Majemuk)",
+      "konten": [
+        {
+          "sub_judul": "Aturan Dasar",
+          "aturan": "Tiap unsur gabungan kata bisa ditambahkan imbuhan, gabungan kata tersebut harus ditulis terpisah. (Contoh: 'tanda' -> 'bertanda', 'tangan' -> 'menangani', maka gabungannya 'tanda tangan' ditulis terpisah).",
+          "daftar_gabungan_serangkai": [
+            "kacamata",
+            "acapkali",
+            "adakala",
+            "karyawisata",
+            "apalagi",
+            "kasat mata",
+            "bagaimana",
+            "kosakata",
+            "barangkali",
+            "manasuka",
+            "beasiswa",
+            "matahari",
+            "belasungkawa",
+            "olahraga",
+            "bilamana",
+            "padahal",
+            "bumiputra",
+            "puspawarna",
+            "saputangan",
+            "daripada",
+            "segitiga",
+            "darmabakti",
+            "sukacita",
+            "dukacita",
+            "hulubalang",
+            "sukarela"
+          ]
+        },
+        {
+          "sub_judul": "Aturan Imbuhan pada Gabungan Kata",
+          "aturan": [
+            {
+              "id": "Aturan 1 (Awalan/Akhiran Saja)",
+              "deskripsi": "Jika salah satu unsur dalam gabungan kata mendapat awalan ATAU akhiran, ia harus ditulis terpisah.",
+              "contoh": [
+                "berterima kasih",
+                "bertanggung jawab",
+                "menanda tangani (PDF ini menulis 'menanda tangan', tetapi EYD V 'menandatangani')",
+                "beralih fungsi",
+                "menolak bala"
+              ]
+            },
+            {
+              "id": "Aturan 2 (Awalan dan Akhiran)",
+              "deskripsi": "Jika kedua unsur gabungan kata mendapat awalan DAN akhiran (konfiks), ia harus ditulis serangkai.",
+              "contoh": [
+                "mempertanggungjawabkan",
+                "menandatangani",
+                "ditandatangani",
+                "dialihfungsikan",
+                "menggarisbawahi",
+                "pertanggungjawaban"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H19_001",
+          "pertanyaan": "Bentuk 'bertanggung jawab' jika diberi imbuhan (konfiks) 'per-an' akan menjadi...",
+          "pilihan": [
+            "per tanggung jawaban",
+            "pertanggung jawaban",
+            "pertanggungjawaban",
+            "per-tanggung-jawaban"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Aturan 2: Jika kedua unsur gabungan kata mendapat awalan (per-) dan akhiran (-an) sekaligus, gabungan kata tersebut harus ditulis serangkai."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-18",
+      "judul_topik": "Penulisan Angka dan Bilangan",
+      "konten": [
+        {
+          "sub_judul": "Ditulis dengan HURUF",
+          "aturan": [
+            "Bilangan tersebut dapat dinyatakan dengan satu atau dua kata (contoh: 'tiga kali', 'lima puluh siswa').",
+            "Bilangan tersebut terletak pada awal kalimat (contoh: 'Lima puluh siswa teladan...').",
+            "Angka dengan bilangan besar bisa ditulis sebagian dengan huruf (contoh: '250 juta rupiah')."
+          ],
+          "pengecualian": [
+            "Jika bilangan dipakai berurutan dalam perincian (contoh: '...terdiri atas 4 bus, 5 minibus, dan 8 sedan.').",
+            "Jika bilangan di awal kalimat lebih dari dua kata, ubah susunan kalimat atau tambahkan kata 'Sebanyak/Sejumlah/Sebesar'. (Contoh: 'Sebanyak 500 orang peserta diundang...' atau 'Panitia mengundang 500 orang...')."
+          ]
+        },
+        {
+          "sub_judul": "Ditulis dengan ANGKA",
+          "aturan": [
+            {
+              "deskripsi": "1. Menyatakan (a) ukuran panjang, berat, luas, isi, dan waktu serta (b) nilai uang.",
+              "contoh": [
+                "0,5 centimeter",
+                "5 kilogram",
+                "4 hektare",
+                "2 tahun 6 bulan 5 hari",
+                "1 jam 20 menit",
+                "Rp 5.000,00",
+                "US$3,50",
+                "5%",
+                "7 persen"
+              ]
+            },
+            {
+              "deskripsi": "2. Menomori alamat (jalan, rumah, apartemen, kamar).",
+              "contoh": [
+                "Jalan Kartika V No. 15",
+                "Jalan Kartika V/15",
+                "Jalan Raya Dumai Kav. 14",
+                "Hotel Mahameru, Kamar 169",
+                "Gedung Samudra, Lantai II, Ruang 201"
+              ]
+            },
+            {
+              "deskripsi": "3. Menomori bagian karangan atau ayat kitab suci.",
+              "contoh": [
+                "Bab II, Pasal 3, halaman 13",
+                "Surah Al-'Alaq [96]:1"
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Penulisan Tambahan",
+          "aturan": [
+            {
+              "deskripsi": "Bilangan Tingkat",
+              "contoh": [
+                "abad VII",
+                "abad ke-7",
+                "abad ketujuh",
+                "Perang Dunia II",
+                "Perang Dunia Ke-2",
+                "Perang Dunia Kedua"
+              ]
+            },
+            {
+              "deskripsi": "Angka dengan akhiran -an (dirangkai tanda hubung)",
+              "contoh": [
+                "lima lembar uang 5.000-an",
+                "seharga 5.000-an",
+                "tahun 2000-an"
+              ]
+            },
+            {
+              "deskripsi": "Bilangan sebagai unsur nama geografi (ditulis serangkai)",
+              "contoh": [
+                "Kelapadua",
+                "Limapuluhkoto",
+                "Rajaampat",
+                "Simpanglima",
+                "Tigaraksa"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H18_001",
+          "pertanyaan": "Penulisan 'tahun 1990 an' yang TEPAT adalah...",
+          "pilihan": [
+            "tahun 1990an",
+            "tahun 1990-an",
+            "tahun 1990 an",
+            "tahun Seribu Sembilan Ratus Sembilan Puluhan"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Penulisan angka yang diikuti akhiran -an dirangkaikan dengan tanda hubung (-)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-17",
+      "judul_topik": "Kapitalisasi Judul dan Kata Ulang",
+      "konten": [
+        {
+          "sub_judul": "Kapitalisasi Judul",
+          "aturan": [
+            "Ikuti aturan kapitalisasi kalimat (huruf pertama awal kalimat kapital).",
+            "Kapitalisasikan semua kata yang tidak termasuk kata tugas (Nomina, Verba, Adjektiva, Adverbia, Pronomina, Numeralia dikapitalisasi).",
+            "Kapitalisasikan kata tugas hanya jika terletak pada posisi awal judul."
+          ],
+          "jenis_kata_tugas": [
+            "preposisi: di, ke, dari, pada, bagi",
+            "konjungsi: dan, atau, karena, yang",
+            "interjeksi: dong, kok, sih",
+            "artikula: si, sang, para",
+            "partikel penegas: pun, per"
+          ]
+        },
+        {
+          "sub_judul": "Kata Ulang",
+          "definisi": "Bentuk kata yang diperoleh melalui proses reduplikasi atau pengulangan, baik secara keseluruhan, sebagian, maupun perubahan.",
+          "jenis_kata_ulang_di_judul": [
+            {
+              "jenis": "Kata Ulang Sempurna/Utuh (Dwilingga)",
+              "definisi": "Mengulang seluruh bentuk dasar tanpa perubahan.",
+              "contoh": "anak-anak, jenis-jenis, jawaban-jawaban, sekolah-sekolah.",
+              "aturan_judul": "Semua unsur kata ulang sempurna dikapitalisasi.",
+              "contoh_judul": "Waspada Sindrom Baru Corona Mengintai Anak-Anak."
+            },
+            {
+              "jenis": "Kata Ulang Sebagian (Dwipurna)",
+              "definisi": "Pengulangan hanya terjadi pada sebagian kata.",
+              "contoh": "lelaki, sesama, sesekali, pepohonan, bebatuan, dedaunan, leluhur, leluasa."
+            },
+            {
+              "jenis": "Kata Ulang Berimbuhan",
+              "definisi": "Mendapat pengulangan dan imbuhan.",
+              "contoh": "bersalam-salaman, tarik-menarik, tolong-menolong, pukul-memukul.",
+              "aturan_judul": "Hanya huruf pertama unsur pertama yang kapital.",
+              "contoh_judul": "Tolong-menolong dalam Kebaikan."
+            },
+            {
+              "jenis": "Kata Ulang Semu",
+              "definisi": "Kata dasar yang strukturnya terlihat seperti kata ulang utuh.",
+              "contoh": "kupu-kupu, kura-kura, paru-paru, pura-pura, hati-hati.",
+              "aturan_judul": "Semua unsur dikapitalisasi.",
+              "contoh_judul": "Tubuh Gejala Kanker Paru-Paru."
+            },
+            {
+              "jenis": "Kata Ulang Berubah Bunyi (Dwilingga Salin Suara)",
+              "definisi": "Kata dasar mengalami perubahan bunyi.",
+              "contoh": "sayur-mayur, bolak-balik, lauk-pauk, gerak-gerik, teka-teki, serba-serbi, mondar-mandir.",
+              "aturan_judul": "Hanya huruf pertama unsur pertama yang kapital.",
+              "contoh_judul": "Serba-serbi Jam Tangan Menarik."
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H17_001",
+          "pertanyaan": "Manakah kapitalisasi judul yang TEPAT?",
+          "pilihan": [
+            "Waspada Sindrom Baru Corona Mengintai Anak-anak",
+            "Serba-Serbi Jam Tangan Menarik",
+            "Tolong-menolong Dalam Kebaikan",
+            "Tubuh Gejala Kanker Paru-Paru"
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Pada judul, kata ulang utuh (Anak-Anak) dan kata ulang semu (Paru-Paru) dikapitalisasi di kedua unsurnya. Kata ulang berubah bunyi (Serba-serbi) dan berimbuhan (Tolong-menolong) hanya kapital di unsur pertama. Kata tugas 'dalam' tidak di awal, jadi harus kecil."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-16",
+      "judul_topik": "Kapitalisasi Hari",
+      "konten": [
+        {
+          "kasus": "Hari Raya (tanpa kata 'Hari')",
+          "aturan": "Nama hari raya ditulis kapital. Penulisan 'hari raya Idulfitri' opsional karena 'Idulfitri' sudah bermakna 'hari raya'.",
+          "contoh_benar": [
+            "Hari ini umat Islam merayakan Idulfitri.",
+            "Hari ini umat Islam merayakan hari Idulfitri."
+          ],
+          "daftar_nama_hari_raya": [
+            "Idulfitri",
+            "Iduladha",
+            "Natal",
+            "Waisak",
+            "Nyepi",
+            "Imlek"
+          ]
+        },
+        {
+          "kasus": "Nama Hari (dengan kata 'Hari')",
+          "aturan": "Jika kata 'hari' merupakan bagian dari nama hari tersebut, ditulis kapital.",
+          "contoh_benar": [
+            "Hari Anak Nasional",
+            "Hari Pahlawan",
+            "Hari Buruh",
+            "Hari Pendidikan",
+            "Hari Kartini"
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H16_001",
+          "pertanyaan": "Manakah penulisan yang TEPAT?",
+          "pilihan": [
+            "Selamat hari Natal!",
+            "Selamat Hari Natal!",
+            "Selamat Hari Raya Idulfitri.",
+            "Tahun ini, Hari Buruh jatuh pada hari Rabu."
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Kata 'Hari' dikapitalisasi jika merupakan bagian dari nama hari tersebut (Hari Buruh, Hari Pahlawan). 'Natal' dan 'Idulfitri' adalah nama harinya, kata 'hari' atau 'selamat' di depannya tidak perlu kapital (kecuali di awal kalimat)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-15",
+      "judul_topik": "Huruf Kapital dan Nonkapital",
+      "konten": [
+        {
+          "sub_judul": "Aturan Huruf KAPITAL (Digunakan sebagai...)",
+          "aturan": [
+            "1. Huruf pertama awal kalimat.",
+            "2. Huruf pertama unsur nama orang, termasuk julukan (Bapak Koperasi Indonesia, Negeri Sakura, Kota Hujan).",
+            "3. Huruf pertama nama orang pada nama teori, hukum, dan rumus (teori Darwin, hukum Archimedes).",
+            "4. Huruf pertama awal kalimat dalam petikan langsung.",
+            "5. Huruf pertama terkait nama agama, kitab suci, dan Tuhan (termasuk sebutan dan kata ganti Tuhan: rahmat-Nya, Tuhan YME, Allah Swt.).",
+            "6. Huruf pertama unsur nama gelar (kehormatan, kebangsawanan, keturunan, keagamaan, akademik) yang diikuti nama orang (Kiai Haji Hasyim Asy'ari, Doktor Muhammad Hatta, Irwansyah, Magister Humaniora).",
+            "7. Huruf pertama unsur nama gelar (kehormatan, keturunan, keagamaan, profesi, jabatan, kepangkatan) yang digunakan sebagai sapaan (Selamat pagi, Dokter. / Silakan duduk, Prof. / Siap, Jenderal.).",
+            "8. Huruf pertama unsur nama jabatan dan pangkat yang diikuti nama orang, atau sebagai pengganti nama orang, nama instansi, atau nama tempat (Kemarin, Presiden Joko Widodo...). (Catatan: Jika tidak merujuk ke orang/instansi spesifik, ditulis kecil: 'Adikku bercita-cita menjadi seorang presiden.')",
+            "9. Huruf pertama nama tahun, bulan, hari, dan hari besar atau hari raya.",
+            "10. Huruf pertama unsur nama peristiwa sejarah (Konferensi Asia Afrika, Perang Dunia II, Proklamasi Kemerdekaan Indonesia).",
+            "11. Huruf pertama nama bangsa, suku, bahasa, negara, dan aksara (bangsa Indonesia, suku Dayak, bahasa Inggris). (Catatan: 'bahasa Indonesia' (bahasa) vs 'Bahasa Indonesia' (mata pelajaran)).",
+            "12. Huruf pertama nama geografi (Benua Asia, Selat Sunda, Kota Bandung).",
+            "13. Huruf pertama nama geografi yang menyatakan asal daerah (batik Cirebon, satai Padang, film Indonesia, kopi Gayo, tari Bali).",
+            "14. Huruf pertama semua kata (termasuk unsur bentuk ulang utuh) dalam nama negara, lembaga, badan, organisasi, atau dokumen, kecuali kata tugas (Kitab Undang-Undang Hukum Pidana, Perserikatan Bangsa-Bangsa, Bosnia dan Herzegovina).",
+            "15. Huruf pertama setiap kata (termasuk unsur bentuk ulang utuh) di dalam judul (buku, artikel, media massa), kecuali kata tugas yang tidak terletak di posisi awal.",
+            "16. Huruf pertama unsur singkatan nama gelar dan nama pangkat (S.E., M.Si., Hj., Pdt., Dg., Dt., Kol.).",
+            "17. Huruf pertama kata penunjuk hubungan kekerabatan (bapak, ibu, kakak, adik) dan ungkapan lain yang digunakan sebagai sapaan atau pengacuan (\"Kapan Bapak berangkat?\", \"Itu apa, Bu?\", \"Surat Saudara telah kami terima\", \"Besok Paman akan datang bersama Kakakmu.\"). (Catatan: Kata 'Anda' selalu diawali kapital)."
+          ]
+        },
+        {
+          "sub_judul": "Aturan Huruf NONKAPITAL (Tidak digunakan...)",
+          "aturan": [
+            "1. Huruf pertama nama orang yang digunakan sebagai nama jenis atau satuan ukuran (5 ampere, 15 watt, ikan mujair, mesin diesel).",
+            "2. Huruf pertama kata bermakna 'anak dari' (bin, binti, boru, van), kecuali sebagai awal nama atau huruf pertama kata tugas 'dari' (Leonardo da Vinci vs. 'Da Vinci, Seniman Besar dari Era Renaisans').",
+            "3. Huruf pertama nama bangsa, suku, bahasa, dan aksara yang berupa bentuk dasar kata turunan (pengindonesiaan kata asing, keinggris-inggrisan, kesunda-sundaan).",
+            "4. Huruf pertama peristiwa sejarah yang tidak digunakan sebagai nama (Kami memperingati proklamasi kemerdekaan..., ...risiko pecahnya perang dunia.).",
+            "5. Istilah kekerabatan yang diikuti kata yang menunjukkan kepemilikan (Kita harus menghormati bapak dan ibu kita. / Semua kakak dan adik saya...).",
+            "6. Huruf pertama nama diri geografi yang digunakan sebagai nama jenis (jeruk bali, kacang bogor, nangka belanda, petai cina).",
+            "7. Huruf pertama unsur geografi yang tidak diikuti nama diri (berlayar ke teluk, mandi di sungai, menyeberangi selat, berenang di danau)."
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H15_001",
+          "pertanyaan": "Manakah kalimat yang menggunakan huruf kapital dengan BENAR?",
+          "pilihan": [
+            "Ayah saya adalah seorang Jenderal.",
+            "Kami sekeluarga berbahasa Indonesia.",
+            "Dia mengajar mata pelajaran Bahasa Indonesia.",
+            "Mereka berlayar ke Teluk."
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Nama bahasa ('bahasa Indonesia') ditulis kecil, tetapi jika merujuk pada mata pelajaran ('Bahasa Indonesia') ditulis kapital. 'Jenderal' dan 'Teluk' harus kecil karena tidak diikuti nama spesifik."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-14",
+      "judul_topik": "Penulisan Nama Latin dalam Judul",
+      "konten": [
+        {
+          "aturan": "Semua penulisan judul yang mengandung penamaan Latin harus:",
+          "poin": [
+            "1. Ditulis cetak miring (di mana pun letaknya, judul ataupun isi teks).",
+            "2. Huruf pertama dalam kedua kata selalu kapital (di mana pun letaknya, judul ataupun isi teks)."
+          ],
+          "contoh_benar": [
+            "Pengaruh Pemberian Ekstrak Rimpang Temulawak (*Curcuma xanthorrhiza*)",
+            "Pengaruh Pemberian Ekstrak Rimpang *Curcuma xanthorrhiza*",
+            "PENGARUH PEMBERIAN EKSTRAK RIMPANG TEMULAWAK (*Curcuma xanthorrhiza*)",
+            "PENGARUH PEMBERIAN EKSTRAK RIMPANG *Curcuma xanthorrhiza*"
+          ],
+          "contoh_salah": [
+            "Pengaruh Pemberian Ekstrak Rimpang Temulawak (*Curcuma Xanthorrhiza*)",
+            "PENGARUH PEMBERIAN EKSTRAK RIMPANG TEMULAWAK (CURCUMA XANTHORRHIZA)"
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H14_001",
+          "pertanyaan": "Manakah penulisan nama Latin yang TEPAT dalam judul 'Manfaat Temulawak (Curcuma xanthorrhiza)'?",
+          "pilihan": [
+            "Manfaat Temulawak (Curcuma Xanthorrhiza)",
+            "Manfaat Temulawak (curcuma xanthorrhiza)",
+            "Manfaat Temulawak (*Curcuma xanthorrhiza*)",
+            "Manfaat Temulawak (CURCUMA XANTHORRHIZA)"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Nama Latin harus ditulis cetak miring, dan huruf pertama kata pertama dikapitalisasi, sedangkan kata kedua (penjenis) tidak."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-13",
+      "judul_topik": "Penulisan Simbol Rupiah (Rp)",
+      "konten": [
+        {
+          "aturan": "Simbol mata uang Indonesia (Rp) tidak diikuti titik dan setelahnya tidak dispasi.",
+          "contoh_benar": [
+            "Rp15.000,00",
+            "Rp15.000 rupiah",
+            "Rp15 miliar",
+            "15.000 IDR",
+            "IDR 15K"
+          ],
+          "contoh_salah": [
+            "Rp. 15.000",
+            "Rp 15.000",
+            "Rp15.000,-",
+            "Rp15,000",
+            "IDR 15.000"
+          ],
+          "tambahan": "Angka yang menunjukkan bilangan besar dapat ditulis sebagian dengan huruf (Contoh: 'pinjaman Rp50 miliar')."
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H13_001",
+          "pertanyaan": "Manakah penulisan mata uang yang SALAH?",
+          "pilihan": [
+            "Rp15.000,00",
+            "Rp 15.000",
+            "Rp15 miliar",
+            "Rp15.000 rupiah"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Penulisan 'Rp' tidak diikuti titik dan tidak dipisah (spasi) dengan angka nominalnya."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-12",
+      "judul_topik": "Kalimat Efektif",
+      "konten": [
+        {
+          "sub_judul": "Cara Mengecek (Ciri-ciri)",
+          "ciri": [
+            "1. Kesepadanan Struktur: Cek apakah kalimat memiliki Subjek (S) dan Predikat (P).",
+            "2. Kehematan Kata: Kata-kata yang digunakan hemat (tidak mubazir).",
+            "3. Kesejajaran Bentuk (Paralelisme): Memiliki kesejajaran bentuk (kelas kata atau imbuhan).",
+            "4. Ketegasan Makna: Tegas secara makna.",
+            "5. Logis: Kalimat masuk akal."
+          ]
+        },
+        {
+          "sub_judul": "Penjelasan Ciri-ciri",
+          "penjelasan": [
+            {
+              "ciri": "a. Kesepadanan Struktur",
+              "poin_kesalahan": [
+                "Tidak memiliki S dan P (Contoh Salah: 'Untuk anggaran yang disetujui adalah...'. Benar: 'Anggaran yang disetujui adalah...').",
+                "Menaruh preposisi di depan S (Contoh Salah: 'Bagi semua peserta diharapkan...'. Benar: 'Semua peserta diharapkan...').",
+                "Menggunakan 'yang' di depan P (Contoh Salah: 'Dia yang pergi meninggalkanku.'. Benar: 'Dia pergi meninggalkanku.').",
+                "Subjek ganda yang tidak perlu (Contoh Salah: 'Adik demam sehingga adik tidak...'. Benar: 'Adik demam sehingga tidak...')."
+              ]
+            },
+            {
+              "ciri": "b. Kehematan Kata",
+              "poin_kesalahan": [
+                "Penggunaan kata jamak ganda (Contoh Salah: 'Para siswa-siswi...'. Benar: 'Siswa-siswi...' atau 'Para siswa...').",
+                "Penggunaan kata sinonim (Contoh Salah: 'Ia masuk ke dalam ruang kelas.'. Benar: 'Ia masuk ruang kelas.').",
+                "Contoh lain: turun (pasti) ke bawah, naik (pasti) ke atas, mundur (pasti) ke belakang, maju (pasti) ke depan."
+              ]
+            },
+            {
+              "ciri": "c. Kesejajaran Bentuk (Paralelisme)",
+              "aturan": "Ketika dua atau lebih bagian kalimat membentuk pola yang sama (verba, verba, verba; nomina, nomina, nomina).",
+              "contoh_salah": "Dia pandai (adj), rajin (adj), dan seorang juara (n).",
+              "contoh_benar": "Mereka dilarang mengobrol (v), menyontek (v), dan tidur (v).",
+              "catatan": "Kesejajaran dilihat dari kelas katanya, tidak harus imbuhannya. (Contoh Benar: 'Ular kobra adalah hewan melata, bertaring, dan berbisa.')"
+            },
+            {
+              "ciri": "d. Ketegasan Makna",
+              "aturan": "Hati-hati membuat kalimat perintah/larangan/anjuran (biasanya pakai partikel -lah atau pun).",
+              "contoh_salah": "Kamu sapulah lantai rumah agar bersih!",
+              "contoh_benar": "Sapulah lantai rumahmu agar bersih!"
+            },
+            {
+              "ciri": "e. Logis (Masuk Akal)",
+              "contoh_tidak_logis": [
+                {
+                  "salah": "Saya mengajar mata kuliah jurnalistik di kampus.",
+                  "alasan": "Yang diajar 'mata kuliah', bukan 'mahasiswa'.",
+                  "benar": "Saya mengajarkan mata kuliah jurnalistik di kampus."
+                },
+                {
+                  "salah": "Waktu dan tempat kami persilakan.",
+                  "alasan": "Yang dipersilakan 'waktu dan tempat', bukan 'pembicara'.",
+                  "benar": "Kepada Bapak X, kami persilakan."
+                },
+                {
+                  "salah": "Kampus kami lulusannya berkualitas dan mudah bekerja.",
+                  "alasan": "Mengandung dua subjek: 'Kampus kami' dan 'lulusannya'.",
+                  "benar": "Lulusan kampus kami berkualitas dan mudah bekerja."
+                },
+                {
+                  "salah": "Mahasiswa terbaik pertama mendapat piala rektor.",
+                  "alasan": "'Terbaik' sudah pasti 'pertama', tidak ada 'terbaik kedua'.",
+                  "benar": "Mahasiswa terbaik mendapat piala rektor."
+                },
+                {
+                  "salah": "Mahasiswa yang kehilangan dompet harap diambil di kantor Satpam.",
+                  "alasan": "Yang diambil 'mahasiswa'-nya atau 'dompet'-nya?",
+                  "benar": "Dompet mahasiswa yang hilang harap diambil di kantor Satpam."
+                },
+                {
+                  "salah": "Polisi sibuk mengatur kemacetan lalu lintas.",
+                  "alasan": "Kemacetan seharusnya 'diuraikan', bukan 'diatur'.",
+                  "benar": "Polisi sibuk menguraikan kemacetan lalu lintas."
+                },
+                {
+                  "salah": "Yang meminjam buku di perpustakaan harap dikembalikan.",
+                  "alasan": "Yang dikembalikan 'buku'-nya atau 'yang meminjam'?",
+                  "benar": "Buku yang dipinjam dari perpustakaan harap dikembalikan."
+                },
+                {
+                  "salah": "Mayat pria yang ditemukan itu sebelumnya sering mondar-mandır di kampung.",
+                  "alasan": "Mayat tidak mungkin mondar-mandir.",
+                  "benar": "Sebelum ditemukan tak bernyawa, pria itu sering mondar-mandir di kampung."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H12_001",
+          "pertanyaan": "Kalimat 'Bagi semua siswa wajib hadir tepat waktu' dianggap tidak efektif karena...",
+          "pilihan": [
+            "Tidak hemat kata",
+            "Tidak logis",
+            "Tidak memiliki subjek yang jelas (preposisi di depan S)",
+            "Tidak memiliki kesejajaran bentuk"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Kalimat ini tidak efektif karena menaruh preposisi 'Bagi' di depan subjek 'semua siswa'. Ini mengaburkan subjek kalimat. Kalimat efektifnya adalah 'Semua siswa wajib hadir tepat waktu.'"
+        }
+      ]
+    },
+    {
+      "topik_id": "H-11",
+      "judul_topik": "Kata Berpasangan Tetap (Kata Majemuk & Idiom)",
+      "konten": [
+        {
+          "definisi": "Kata majemuk adalah gabungan dua kata atau lebih yang memiliki struktur tetap, tidak dapat disisipi kata lain atau dipisahkan.",
+          "contoh": [
+            "rumah makan",
+            "rumah sakit",
+            "kereta api",
+            "air mata"
+          ]
+        },
+        {
+          "sub_judul": "Ciri-ciri Kata Majemuk dan Idiom",
+          "ciri": [
+            {
+              "id": 1,
+              "nama": "Tidak Bisa Disisipi",
+              "deskripsi": "Jika bisa disisipi tanpa mengubah makna, itu Frasa. Jika makna berubah/hilang, itu Kata Majemuk.",
+              "contoh_majemuk": "'kacamata' tidak bisa menjadi 'kaca pada mata'.",
+              "contoh_frasa": "'mobil merah' bisa menjadi 'mobil berwarna merah'."
+            },
+            {
+              "id": 2,
+              "nama": "Tidak Dapat Diperluas (Sebagian)",
+              "deskripsi": "Imbuhan harus disertakan di gabungan kata (konfiks), bukan di salah satu katanya saja.",
+              "contoh_majemuk": "'kereta api' tidak bisa 'perkereta api' atau 'kereta apian'. Harus 'perkeretaapian'."
+            },
+            {
+              "id": 3,
+              "nama": "Posisinya Tidak Dapat Ditukar",
+              "deskripsi": "Jika ditukar, maknanya akan hilang atau berubah.",
+              "contoh_idiom": "'angkat kaki' (pergi) tidak bisa 'kaki angkat'.",
+              "contoh_majemuk": "'buah tangan' (oleh-oleh) tidak bisa 'tangan buah'."
+            },
+            {
+              "id": 4,
+              "nama": "Tidak Dapat Ditambahkan atau Dipisahkan",
+              "contoh_idiom": "'makan hati' tidak bisa 'makanan hati' atau 'makan itu hati'."
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H11_001",
+          "pertanyaan": "Manakah di bawah ini yang merupakan ciri-ciri Frasa, BUKAN kata majemuk?",
+          "pilihan": [
+            "Posisinya tidak dapat ditukar",
+            "Tidak dapat diperluas sebagian",
+            "Dapat disisipi kata lain tanpa mengubah makna",
+            "Memiliki makna baru yang berbeda dari kata asalnya"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Ciri frasa adalah gabungan katanya dapat disisipi. Contoh: 'mobil merah' (frasa) bisa disisipi menjadi 'mobil yang merah'. 'Rumah sakit' (kata majemuk) tidak bisa disisipi."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-10",
+      "judul_topik": "Preposisi (Kata Depan)",
+      "konten": [
+        {
+          "sub_judul": "Jenis Preposisi",
+          "jenis": [
+            {
+              "nama": "Kata Dasar",
+              "daftar": [
+                "akan",
+                "antara",
+                "atas",
+                "bagi",
+                "buat",
+                "dalam",
+                "dari",
+                "demi",
+                "di",
+                "hingga",
+                "ke",
+                "kecuali",
+                "pada",
+                "oleh",
+                "per",
+                "sampai",
+                "sejak",
+                "seperti",
+                "serta",
+                "tanpa",
+                "untuk"
+              ]
+            },
+            {
+              "nama": "Berimbuhan",
+              "daftar": [
+                "bagaikan",
+                "bersama",
+                "beserta",
+                "melalui",
+                "mengenai",
+                "menjelang",
+                "menuju",
+                "menurut",
+                "terhadap"
+              ]
+            },
+            {
+              "nama": "Terdiri dari Dua Preposisi",
+              "daftar": [
+                "daripada",
+                "kepada",
+                "(oleh) karena",
+                "(oleh) sebab",
+                "sampai dengan",
+                "sampai ke",
+                "selain (dari)"
+              ]
+            },
+            {
+              "nama": "Korelasi (Berpasangan)",
+              "daftar": [
+                "antara... dan ...",
+                "dari... hingga ...",
+                "dari... sampai (dengan)...",
+                "dari... sampai ke ...",
+                "dari... ke ...",
+                "dari... sampai ...",
+                "sejak... hingga ...",
+                "sejak... sampai ...",
+                "mulai... sampai (dengan)..."
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Peran Semantis Preposisi",
+          "peran": [
+            {
+              "nama": "Penanda Hubungan Tempat",
+              "kata": [
+                "di",
+                "ke",
+                "dari",
+                "hingga",
+                "sampai",
+                "antara",
+                "pada"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Peruntukan",
+              "kata": [
+                "bagi",
+                "untuk",
+                "buat",
+                "guna"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Sebab",
+              "kata": [
+                "karena",
+                "sebab",
+                "lantaran"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Kesertaan atau Cara",
+              "kata": [
+                "dengan",
+                "sambil",
+                "bersama",
+                "beserta"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Pelaku",
+              "kata": [
+                "oleh"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Waktu",
+              "kata": [
+                "pada",
+                "hingga",
+                "sampai",
+                "sejak",
+                "semenjak",
+                "menjelang",
+                "dari"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Ihwal",
+              "kata": [
+                "tentang",
+                "mengenai"
+              ]
+            },
+            {
+              "nama": "Penanda Hubungan Asal (Bahan)",
+              "kata": [
+                "dari"
+              ]
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H10_001",
+          "pertanyaan": "Preposisi 'bagi' dan 'untuk' digunakan sebagai penanda hubungan...",
+          "pilihan": [
+            "Tempat",
+            "Waktu",
+            "Peruntukan",
+            "Sebab"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Preposisi 'bagi', 'untuk', 'buat', dan 'guna' adalah penanda hubungan peruntukan."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-9",
+      "judul_topik": "Makna Konjungsi Antarkalimat",
+      "konten": [
+        {
+          "makna": "1. Menyatakan Pertentangan",
+          "kata": [
+            "Biarpun demikian,...",
+            "Biarpun begitu,...",
+            "Meskipun demikian,...",
+            "Meskipun begitu,...",
+            "Sekalipun demikian,...",
+            "Sekalipun begitu,...",
+            "Walaupun demikian,...",
+            "Walaupun begitu,..."
+          ],
+          "contoh": "Sebagian besar pengusaha keberatan... Meskipun demikian, mereka harus mematuhinya."
+        },
+        {
+          "makna": "2. Menyatakan Lanjutan dari Keadaan Sebelumnya",
+          "kata": [
+            "Kemudian,...",
+            "Sesudah itu,...",
+            "Setelah itu,...",
+            "Selanjutnya,...",
+            "Berikutnya,..."
+          ],
+          "contoh": "Mereka akan memulai pendakian... Setelah itu, mereka akan beristirahat..."
+        },
+        {
+          "makna": "3. Menyatakan Kebalikan",
+          "kata": [
+            "Sebaliknya,..."
+          ],
+          "contoh": "Kita tidak boleh terus-menerus menggunakan plastik. Sebaliknya, kita harus menguranginya."
+        },
+        {
+          "makna": "4. Menyatakan Keadaan yang Sebenarnya",
+          "kata": [
+            "Sesungguhnya,...",
+            "Sebenarnya,...",
+            "Sebetulnya,..."
+          ],
+          "contoh": "...dunia dilanda pandemi... Sebenarnya, pandemi ini sudah diprediksi..."
+        },
+        {
+          "makna": "5. Menyatakan Pertentangan dengan Keadaan Sebelumnya",
+          "kata": [
+            "Namun,...",
+            "Akan tetapi,..."
+          ],
+          "contoh": "...keadaan mulai kondusif. Akan tetapi, kita tetap harus waspada."
+        },
+        {
+          "makna": "6. Menyatakan Konsekuensi",
+          "kata": [
+            "Dengan demikian,..."
+          ],
+          "contoh": "Kedua belah pihak telah menyetujui... Dengan demikian, mereka harus siap menanggung segala risiko...",
+          "catatan": "Konsekuensi lebih merujuk pada hasil lanjutan."
+        },
+        {
+          "makna": "7. Menyatakan Akibat",
+          "kata": [
+            "Oleh karena itu,...",
+            "Oleh sebab itu,..."
+          ],
+          "contoh": "Ibu sudah melarang... tetapi mereka tak menghiraukan. Oleh karena itu, ibu marah...",
+          "catatan": "Akibat lebih merujuk pada alasan kenapa suatu hal dilakukan."
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H09_001",
+          "pertanyaan": "Konjungsi antarkalimat 'Dengan demikian,...' digunakan untuk menyatakan...",
+          "pilihan": [
+            "Pertentangan",
+            "Akibat",
+            "Keadaan sebenarnya",
+            "Konsekuensi"
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "'Dengan demikian,...' digunakan untuk menyatakan konsekuensi atau hasil lanjutan dari kalimat sebelumnya."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-8",
+      "judul_topik": "Imbuhan pe-",
+      "konten": [
+        {
+          "sub_judul": "Proses Pembentukan",
+          "proses": [
+            "1. pe- yang sebanding dengan prefiks me- (pe[N]-)",
+            "2. pe- yang sebanding dengan prefiks ber- (pe[R]-)"
+          ],
+          "contoh_proses": [
+            {
+              "kata_kerja": "mencandu (me-)",
+              "kata_benda": "pencandu (peN-)"
+            },
+            {
+              "kata_kerja": "bertinju (ber-)",
+              "kata_benda": "petinju (peR-)"
+            },
+            {
+              "kata_kerja": "meninju (me-)",
+              "kata_benda": "peninju (peN-)"
+            },
+            {
+              "kata_kerja": "belajar (ber-)",
+              "kata_benda": "pelajar (peR-)"
+            },
+            {
+              "kata_kerja": "mengajar (me-)",
+              "kata_benda": "pengajar (peN-)"
+            },
+            {
+              "kata_kerja": "bercinta (ber-)",
+              "kata_benda": "pecinta (peR-)"
+            },
+            {
+              "kata_kerja": "mencinta (me-)",
+              "kata_benda": "pencinta (peN-)"
+            }
+          ]
+        },
+        {
+          "sub_judul": "Makna Konfiks per-an vs. pe-an",
+          "makna_per_an": [
+            "Sesuatu yang abstrak (perkataan, perdamaian)",
+            "Tempat (perkampungan, permukiman, perumahan)",
+            "Kumpulan (peraturan)"
+          ],
+          "perbedaan": [
+            {
+              "pe_an": "pemukiman (proses bermukim)",
+              "per_an": "permukiman (daerah tempat bermukim)"
+            },
+            {
+              "pe_an": "pemakaman (proses memakamkan)",
+              "per_an": "permakaman (area tempat memakamkan)"
+            },
+            {
+              "pe_an": "pengotakan (proses mengotakan)",
+              "per_an": "perkotaan (daerah [kawasan] kota)"
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H08_001",
+          "pertanyaan": "Kata 'petinju' berasal dari kata kerja dasar berimbuhan...",
+          "pilihan": [
+            "meninju (me-)",
+            "bertinju (ber-)",
+            "tinju",
+            "ditinju (di-)"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Imbuhan pe- yang sebanding dengan prefiks ber- (peR-) contohnya adalah 'bertinju' -> 'petinju'. Jika 'meninju' (me-), akan menjadi 'peninju'."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-7 & H-6",
+      "judul_topik": "Tanda Titik Dua (:) dan Kata Pemerinci",
+      "konten": [
+        {
+          "sub_judul": "Aturan Tanda Titik Dua (:)",
+          "aturan": [
+            {
+              "deskripsi": "Dipakai pada akhir suatu pernyataan lengkap yang diikuti pemerincian atau penjelasan.",
+              "contoh": "Kami memerlukan perabot rumah tangga: kursi, meja, dan lemari.",
+              "penjelasan_contoh": "Kalimat 'Kami memerlukan perabot rumah tangga' sudah lengkap (S-P-O)."
+            },
+            {
+              "deskripsi": "TIDAK dipakai jika perincian atau penjelasan itu merupakan Pelengkap yang mengakhiri pernyataan.",
+              "contoh": "Kami memerlukan kursi, meja, dan lemari.",
+              "penjelasan_contoh": "Kalimat 'Kami memerlukan' tidak lengkap (S-P), butuh objek. 'kursi, meja, dan lemari' adalah pelengkap/objek, sehingga tidak didahului titik dua."
+            },
+            {
+              "deskripsi": "Dipakai untuk memisahkan angka jam, menit, dan detik.",
+              "contoh": [
+                "pukul 01:35:20 (pukul 1 lewat 35 menit 20 detik)",
+                "01:35:20 jam (1 jam, 35 menit, 20 detik)"
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Kata Pemerinci",
+          "jenis": [
+            {
+              "nama": "Kata Pemerinci Lengkap",
+              "deskripsi": "Diikuti oleh semua anggotanya. Boleh diikuti 'dsb.', 'dll.', 'dst.'.",
+              "daftar_kata": [
+                "...terdiri atas...",
+                "...mencakup...",
+                "...meliputi...",
+                "...yaitu...",
+                "...yakni...",
+                "...di antaranya:",
+                "...antara lain:",
+                "...berikut ini:",
+                "...sebagai berikut:"
+              ],
+              "contoh": [
+                "Kolak dibuat dari tiga bahan utama, yaitu pisang, santan, dan gula aren.",
+                "KTT BRICS diikuti lima negara, yakni Rusia, India, Tiongkok, Brasil, dan Afrika Selatan."
+              ]
+            },
+            {
+              "nama": "Kata Pemerinci Taklengkap",
+              "deskripsi": "Hanya diikuti oleh sebagian anggotanya.",
+              "daftar_kata": [
+                "...antara lain...",
+                "...seperti...",
+                "...contohnya...",
+                "...misalnya..."
+              ],
+              "contoh": [
+                "Ada beberapa bahan utama..., misalnya kuning telur, tepung terigu, gula pasir, dan nanas.",
+                "KTT G-20 dihadiri banyak negara, antara lain Indonesia, Rusia, Jepang, dan Amerika Serikat."
+              ]
+            }
+          ]
+        },
+        {
+          "sub_judul": "Perbedaan dsb., dll., dst.",
+          "perbedaan": [
+            {
+              "singkatan": "dsb. (dan sebagainya)",
+              "penggunaan": "Menyatakan perincian lebih lanjut yang bentuknya sejenis.",
+              "contoh": "...membeli berbagai alat tulis, yaitu pensil, pulpen, spidol, dan sebagainya."
+            },
+            {
+              "singkatan": "dll. (dan lain-lain)",
+              "penggunaan": "Menyatakan perincian yang beragam.",
+              "contoh": "Banjir disebabkan oleh curah hujan..., penerbangan liar..., sampah..., dan lain-lain."
+            },
+            {
+              "singkatan": "dst. (dan seterusnya)",
+              "penggunaan": "Menyatakan perincian yang berjenjang atau berkelanjutan secara berurutan.",
+              "contoh": "...mempelajari buku... dari Bab I, II, dan seterusnya."
+            }
+          ],
+          "catatan_titik": "Jika singkatan (dsb., dll., dst.) berada di akhir kalimat, hanya satu tanda titik yang diperlukan."
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H07_001",
+          "pertanyaan": "Manakah penggunaan tanda titik dua (:) yang TEPAT?",
+          "pilihan": [
+            "Kami memerlukan: kursi, meja, dan lemari.",
+            "Bahan utamanya adalah: pisang, santan, dan gula.",
+            "KTT G-20 dihadiri banyak negara, antara lain: Indonesia, Rusia, dan Jepang.",
+            "Kami memerlukan perabot rumah tangga: kursi, meja, dan lemari."
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Tanda titik dua dipakai pada akhir pernyataan LENGKAP. 'Kami memerlukan perabot rumah tangga' sudah lengkap (S-P-O). Kalimat 'Kami memerlukan' (pilihan A) belum lengkap karena butuh objek."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-5",
+      "judul_topik": "Kata dengan Makna Bertingkat (Hiponimi)",
+      "konten": {
+        "definisi": "Hiponimi adalah kata atau frasa yang maknanya tercakup dalam kata lain yang lebih umum (hipernimi). Hiponimi adalah jenis dari suatu hipernimi.",
+        "contoh": [
+          {
+            "hipernimi": "buah",
+            "hiponimi": [
+              "mangga",
+              "jeruk",
+              "semangka",
+              "melon"
+            ]
+          },
+          {
+            "hipernimi": "burung",
+            "hiponimi": [
+              "merpati",
+              "gagak",
+              "elang",
+              "camar"
+            ]
+          },
+          {
+            "hipernimi": "hewan peliharaan",
+            "hiponimi": [
+              "ayam",
+              "kelinci",
+              "burung",
+              "hamster"
+            ]
+          },
+          {
+            "hipernimi": "kendaraan",
+            "hiponimi": [
+              "sepeda motor",
+              "becak",
+              "mobil",
+              "bus"
+            ]
+          },
+          {
+            "hipernimi": "sayuran",
+            "hiponimi": [
+              "bayam",
+              "kangkung",
+              "brokoli"
+            ]
+          },
+          {
+            "hipernimi": "operasi hitung",
+            "hiponimi": [
+              "penjumlahan",
+              "pengurangan",
+              "perkalian",
+              "pembagian"
+            ]
+          },
+          {
+            "hipernimi": "afiks",
+            "hiponimi": [
+              "prefiks",
+              "sufiks",
+              "infiks",
+              "konfiks"
+            ]
+          },
+          {
+            "hipernimi": "Susunan Pengurus",
+            "hiponimi": [
+              "ketua",
+              "wakil",
+              "sekretaris"
+            ]
+          },
+          {
+            "hipernimi": "alat tulis",
+            "hiponimi": [
+              "pensil",
+              "pulpen",
+              "penggaris"
+            ]
+          }
+        ]
+      },
+      "kuis": [
+        {
+          "id_pertanyaan": "H05_001",
+          "pertanyaan": "'Apel', 'mangga', dan 'jeruk' merupakan hiponimi dari hipernimi...",
+          "pilihan": [
+            "Tumbuhan",
+            "Makanan",
+            "Buah",
+            "Vitamin"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Hiponimi adalah kata yang maknanya tercakup dalam kata lain yang lebih umum (hipernimi). 'Apel', 'mangga', 'jeruk' adalah jenis dari 'buah'."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-4",
+      "judul_topik": "Kata Ulang (Reduplikasi)",
+      "konten": [
+        {
+          "definisi": "Bentuk kata yang diperoleh melalui proses reduplikasi atau pengulangan, baik secara keseluruhan, sebagian, maupun perubahan.",
+          "jenis": [
+            {
+              "nama": "Kata Ulang Utuh (Dwilingga)",
+              "deskripsi": "Mengulang seluruh bentuk kata, baik kata dasar maupun kata berimbuhan.",
+              "contoh": "anak-anak, jenis-jenis, jawaban-jawaban, pertanyaan-pertanyaan, ibu-ibu, bapak-bapak, sekolah-sekolah."
+            },
+            {
+              "nama": "Kata Ulang Sebagian (Dwipurna)",
+              "deskripsi": "Pengulangan katanya hanya terjadi pada sebagian kata saja.",
+              "contoh": "lelaki, sesama, sesekali, pepohonan, bebatuan, dedaunan, leluhur, leluasa."
+            },
+            {
+              "nama": "Kata Ulang Berimbuhan",
+              "deskripsi": "Mendapat pengulangan kata pada kata dasarnya serta mendapat imbuhan.",
+              "contoh": "bersalam-salaman, bermaaf-maafan, berpeluk-pelukan, berpegang-pegangan, tarik-menarik, tolong-menolong, pukul-memukul."
+            },
+            {
+              "nama": "Kata Ulang Semu",
+              "deskripsi": "Kata dasar yang strukturnya terlihat seperti kata ulang utuh.",
+              "contoh": "kupu-kupu, kura-kura, paru-paru, ubur-ubur, cumi-cumi, pura-pura, aba-aba, hati-hati."
+            },
+            {
+              "nama": "Kata Ulang Berubah Bunyi (Dwilingga Salin Suara)",
+              "deskripsi": "Kata dasarnya mendapat atau mengalami perubahan bunyi.",
+              "contoh": "sayur-mayur, bolak-balik, lauk-pauk, gerak-gerik, teka-teki, serba-serbi, mondar-mandir, gonjang-ganjing."
+            }
+          ]
+        },
+        {
+          "sub_judul": "Catatan Tambahan",
+          "aturan": [
+            {
+              "deskripsi": "Bentuk ulang gabungan kata (kata majemuk) ditulis dengan mengulang unsur pertama.",
+              "contoh": [
+                "kapal barang -> kapal-kapal barang",
+                "kereta api cepat -> kereta-kereta api cepat",
+                "rak buku -> rak-rak buku",
+                "surat kabar -> surat-surat kabar"
+              ]
+            },
+            {
+              "deskripsi": "Kapitalisasi Kata Ulang dalam Judul: Yang dikapitalisasi kedua katanya hanya kata ulang utuh dan semu.",
+              "contoh_utuh_semu": [
+                "Tubuh Gejala Kanker Paru-Paru",
+                "Waspada Sindrom Baru Corona Mengintai Anak-Anak"
+              ],
+              "contoh_berubah_bunyi": "Serba-serbi Jam Tangan Menarik",
+              "contoh_berimbuhan": "Tolong-menolong dalam Kebaikan"
+            }
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H04_001",
+          "pertanyaan": "Kata 'kupu-kupu' dan 'hati-hati' termasuk ke dalam jenis kata ulang...",
+          "pilihan": [
+            "Kata Ulang Utuh",
+            "Kata Ulang Berimbuhan",
+            "Kata Ulang Semu",
+            "Kata Ulang Berubah Bunyi"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Kata ulang semu adalah kata dasar yang strukturnya terlihat seperti kata ulang, padahal bukan proses pengulangan (contoh: 'kupu' bukan kata dasar)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-3",
+      "judul_topik": "Imbuhan 'ber-' atau 'be-'?",
+      "konten": [
+        {
+          "aturan": "Imbuhan 'ber-' yang diikuti kata yang suku kata pertamanya mengandung unsur 'er', maka /r/ pada imbuhan 'ber-' harus luluh (menjadi 'be-').",
+          "contoh": [
+            "ber- + cer-min = becermin",
+            "ber- + ker-ja = bekerja",
+            "ber- + der-ma = bederma",
+            "ber- + ter-nak = beternak",
+            "ber- + per-ka-ra = beperkara"
+          ],
+          "tambahan": "Berlaku juga pada konfiks ber-an dan imbuhan ter-.",
+          "contoh_tambahan": [
+            "ber- + ter-bang + -an = beterbangan",
+            "ber- + per-gi + -an = bepergian",
+            "ter- + cer-na = tecerna",
+            "ter- + per-ca-ya = tepercaya",
+            "ter- + per-cik = tepercik",
+            "ter- + per-gok = tepergok",
+            "ter- + cer-min = tecermin"
+          ],
+          "pengecualian": "Kata-kata yang fonem /r/ terdapat pada suku kata kedua tidak luluh.",
+          "contoh_pengecualian": [
+            "me-rek",
+            "ke-ri-ngat",
+            "ce-rah",
+            "ge-rak",
+            "ke-ra-bat",
+            "ce-rai"
+          ]
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H03_001",
+          "pertanyaan": "Imbuhan 'ber-' jika bertemu dengan kata 'kerja' akan menjadi...",
+          "pilihan": [
+            "berkerja",
+            "bekerja",
+            "bererja",
+            "bekerja"
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Imbuhan 'ber-' yang diikuti kata yang suku kata pertamanya mengandung unsur 'er' ('ker-ja'), maka /r/ pada 'ber-' akan luluh menjadi 'be-'. (ber- + kerja = bekerja)."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-2",
+      "judul_topik": "Objek (O) dan Pelengkap (Pel)",
+      "konten": [
+        {
+          "definisi": "Objek adalah Fungsi sintaksis yang kehadirannya ditentukan oleh predikat (P) yang berupa verba transitif pada kalimat aktif. Letaknya selalu langsung setelah P.",
+          "sub_judul": "Cara Membedakan O atau Pel",
+          "langkah": [
+            "Cek Predikat (P).",
+            "Apakah P verbal? Jika tidak, pasti diikuti Pelengkap.",
+            "Jika P verbal, cek imbuhannya.",
+            "Imbuhan (me-, memper-, me-i, memper-kan, memper-i): Bisa jadi diikuti Objek (O). Cek apakah bisa dipasifkan. Jika bisa, itu Objek.",
+            "Imbuhan (ber-, di-, ter-, ke-an): Tidak diikuti Objek, bisa jadi diikuti Pelengkap (Pel)."
+          ],
+          "catatan": [
+            "Predikat me- bisa jadi tidak diikuti objek (Contoh: 'Saya (S) membaca (P).' -> kalimat utuh).",
+            "Predikat dengan kombinasi afiks me-kan, me-i, memper-kan, dan memper-i HARUS diikuti objek (Contoh: 'Saya (S) memberikan (P).' -> kalimat menggantung, butuh Objek)."
+          ],
+          "contoh_pelengkap": "Dia (S) bermain (P) bola (Pel.). (Predikat 'bermain' berimbuhan 'ber-')"
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H02_001",
+          "pertanyaan": "Kalimat 'Saya memberikan (P) hadiah (O)' membutuhkan Objek karena...",
+          "pilihan": [
+            "Predikatnya berimbuhan 'ber-'",
+            "Kalimatnya bisa dipasifkan",
+            "Predikatnya berimbuhan 'me-kan' yang wajib diikuti Objek",
+            "Hadiah adalah kata benda"
+          ],
+          "jawaban_benar_index": 2,
+          "pembahasan": "Predikat verba dengan kombinasi afiks me-kan, me-i, memper-kan, dan memper-i harus diikuti objek agar kalimatnya utuh dan tidak menggantung."
+        }
+      ]
+    },
+    {
+      "topik_id": "H-1",
+      "judul_topik": "Preposisi 'di' dan 'pada'",
+      "konten": [
+        {
+          "aturan_utama": {
+            "di": "di + tempat (fisik)",
+            "pada": "pada + bukan tempat"
+          }
+        },
+        {
+          "sub_judul": "Penggunaan 'di' (Tempat Fisik)",
+          "aturan": "Preposisi 'di' hanya diikuti tempat.",
+          "contoh": [
+            "Di Jakarta",
+            "Di rumah",
+            "Di kota",
+            "Di kantor",
+            "Di atas...",
+            "Di bawah...",
+            "Di samping...",
+            "Di sebelah...",
+            "Di balik...",
+            "Di depan..."
+          ]
+        },
+        {
+          "sub_judul": "Penggunaan 'pada' (Bukan Tempat)",
+          "aturan": "Gunakan preposisi 'pada' jika diikuti:",
+          "diikuti_oleh": [
+            "Waktu (Pada kesempatan, Pada masa, Pada era, Pada zaman, Pada bulan, Pada hari, Pada esok, Pada kemarin)",
+            "Konsep / Benda Abstrak (Pada pertandingan, Pada ketinggian, Pada pertemuan, Pada kedalaman)",
+            "Kata Ganti (Pada saya)",
+            "Nama Diri",
+            "Nama Perkerabatan",
+            "Nama Jabatan (Pada direktur)"
+          ],
+          "catatan": "Preposisi 'di' tidak digunakan jika diikuti kata benda abstrak (niskala/tidak berwujud). (Salah: 'Di ketinggian', Benar: 'Pada ketinggian')."
+        }
+      ],
+      "kuis": [
+        {
+          "id_pertanyaan": "H01_001",
+          "pertanyaan": "Manakah penulisan preposisi yang TEPAT?",
+          "pilihan": [
+            "Di kesempatan ini, saya...",
+            "Pada kesempatan ini, saya...",
+            "Lukisan itu ada di saya.",
+            "Di zaman dahulu kala..."
+          ],
+          "jawaban_benar_index": 1,
+          "pembahasan": "Preposisi 'pada' digunakan untuk hal-hal yang bukan tempat fisik, seperti 'Waktu' (zaman, kesempatan) dan 'Kata Ganti' (saya, direktur)."
+        }
+      ]
+    },
+    {
+      "topik_id": "Kamus",
+      "judul_topik": "Kata Baku - Tidak Baku",
+      "konten": {
+        "deskripsi": "Daftar kata baku dan tidak baku yang diekstrak dari halaman 36-38.",
+        "daftar_kata": [
+          { "baku": "Atmosfer", "tidak_baku": "Atmosfir" },
+          { "baku": "Hektare", "tidak_baku": "Hektar" },
+          { "baku": "Komplet", "tidak_baku": "Komplit" },
+          { "baku": "Konkret", "tidak_baku": "Kongkrit" },
+          { "baku": "Nafsu", "tidak_baku": "Napsu" },
+          { "baku": "Napas", "tidak_baku": "Nafas" },
+          { "baku": "Asas", "tidak_baku": "Azas" },
+          { "baku": "Imbau", "tidak_baku": "Himbau" },
+          { "baku": "Kategori", "tidak_baku": "Katagori" },
+          { "baku": "Meterai", "tidak_baku": "Materai" },
+          { "baku": "Miliar", "tidak_baku": "Milyar" },
+          { "baku": "Sekadar", "tidak_baku": "Sekedar" },
+          { "baku": "Kosakata", "tidak_baku": "Kosa kata" },
+          { "baku": "Perajin", "tidak_baku": "Pengrajin" },
+          { "baku": "Praktik", "tidak_baku": "Praktek" },
+          { "baku": "Reservoir", "tidak_baku": "Reservoar" },
+          { "baku": "Roboh", "tidak_baku": "Rubuh" },
+          { "baku": "Saraf", "tidak_baku": "Syaraf" },
+          { "baku": "Analisis", "tidak_baku": "Analisa" },
+          { "baku": "Kedaluwarsa", "tidak_baku": "Kadaluarsa" },
+          { "baku": "Lembap", "tidak_baku": "Lembab" },
+          { "baku": "Memesona", "tidak_baku": "Mempesona" },
+          { "baku": "Respons", "tidak_baku": "Respon" },
+          { "baku": "Seriawan", "tidak_baku": "Sariawan" },
+          { "baku": "Ambulans", "tidak_baku": "Ambulan" },
+          { "baku": "Hidraulis", "tidak_baku": "Hidrolik" },
+          { "baku": "Nakhoda", "tidak_baku": "Nahkoda" },
+          { "baku": "Sopir", "tidak_baku": "Supir" },
+          { "baku": "Telanjur", "tidak_baku": "Terlanjur" },
+          { "baku": "Telentang", "tidak_baku": "Terlentang" },
+          { "baku": "Dekret", "tidak_baku": "Dekrit" },
+          { "baku": "Detail", "tidak_baku": "Detil" },
+          { "baku": "Frustrasi", "tidak_baku": "Frustasi" },
+          { "baku": "Ekstrem", "tidak_baku": "Ekstrim" },
+          { "baku": "Elite", "tidak_baku": "Elit" },
+          { "baku": "Tepercaya", "tidak_baku": "Terpercaya" },
+          { "baku": "Embus", "tidak_baku": "Hembus" },
+          { "baku": "Esai", "tidak_baku": "Esay" },
+          { "baku": "Negeri", "tidak_baku": "Negri" },
+          { "baku": "Objektif", "tidak_baku": "Obyektif" },
+          { "baku": "Omzet", "tidak_baku": "Omset" },
+          { "baku": "Realitas", "tidak_baku": "Realita" },
+          { "baku": "Autentik", "tidak_baku": "Otentik" },
+          { "baku": "Banderol", "tidak_baku": "Bandrol" },
+          { "baku": "Hafal", "tidak_baku": "Hapal" },
+          { "baku": "Impit", "tidak_baku": "Himpit" },
+          { "baku": "Indra", "tidak_baku": "Indera" },
+          { "baku": "Isap", "tidak_baku": "Hisap" },
+          { "baku": "Andal", "tidak_baku": "Handal" },
+          { "baku": "Autopsi", "tidak_baku": "Otopsi" },
+          { "baku": "Pampat", "tidak_baku": "Mampat" },
+          { "baku": "Nasihat", "tidak_baku": "Nasehat" },
+          { "baku": "Metode", "tidak_baku": "Metoda" },
+          { "baku": "Mangkuk", "tidak_baku": "Mangkok" },
+          { "baku": "Gua", "tidak_baku": "Goa" },
+          { "baku": "Hadis", "tidak_baku": "Hadist" },
+          { "baku": "Hakikat", "tidak_baku": "Hakekat" },
+          { "baku": "Lokalisasi", "tidak_baku": "Lokalisir" },
+          { "baku": "Lubang", "tidak_baku": "Lobang" },
+          { "baku": "Sekretaris", "tidak_baku": "Sekertaris" },
+          { "baku": "Amendemen", "tidak_baku": "Amandemen" },
+          { "baku": "Kongres", "tidak_baku": "Konggres" },
+          { "baku": "Kreativitas", "tidak_baku": "Kreatifitas" },
+          { "baku": "Legalisasi", "tidak_baku": "Legalisir" },
+          { "baku": "Persentase", "tidak_baku": "Prosentase" },
+          { "baku": "Rapi", "tidak_baku": "Rapih" },
+          { "baku": "Peduli", "tidak_baku": "Perduli" },
+          { "baku": "Pelesir", "tidak_baku": "Plesir" },
+          { "baku": "Pelintir", "tidak_baku": "Plintir" },
+          { "baku": "Setrika", "tidak_baku": "Seterika" },
+          { "baku": "Silakan", "tidak_baku": "Silahkan" },
+          { "baku": "Sirop", "tidak_baku": "Sirup" },
+          { "baku": "Cabai", "tidak_baku": "Cabe" },
+          { "baku": "Cedera", "tidak_baku": "Cidera" },
+          { "baku": "Merek", "tidak_baku": "Merk" },
+          { "baku": "Objek", "tidak_baku": "Obyek" },
+          { "baku": "Risiko", "tidak_baku": "Resiko" },
+          { "baku": "Utang", "tidak_baku": "Hutang" },
+          { "baku": "Ibu kota", "tidak_baku": "Ibukota" },
+          { "baku": "Pembaruan", "tidak_baku": "Pembaharuan" },
+          { "baku": "Religius", "tidak_baku": "Relijius" },
+          { "baku": "Teladan", "tidak_baku": "Tauladan" },
+          { "baku": "Tenteram", "tidak_baku": "Tentram" },
+          { "baku": "Teoretis", "tidak_baku": "Teoritis" },
+          { "baku": "Jagat", "tidak_baku": "Jagad" },
+          { "baku": "Jenderal", "tidak_baku": "Jendral" },
+          { "baku": "Kaus", "tidak_baku": "Kaos" },
+          { "baku": "Pikir", "tidak_baku": "Fikir" },
+          { "baku": "Prangko", "tidak_baku": "Perangko" },
+          { "baku": "Rontgen", "tidak_baku": "Ronsen" },
+          { "baku": "Masyhur", "tidak_baku": "Mashur" },
+          { "baku": "Nahas", "tidak_baku": "Naas" },
+          { "baku": "Standardisasi", "tidak_baku": "Standarisasi" },
+          { "baku": "Stereotip", "tidak_baku": "Stereotipe" },
+          { "baku": "Stres", "tidak_baku": "Stress" },
+          { "baku": "Subjek", "tidak_baku": "Subyek" },
+          { "baku": "Baterai", "tidak_baku": "Baterei" },
+          { "baku": "Cokelat", "tidak_baku": "Coklat" },
+          { "baku": "Debit", "tidak_baku": "Debet" },
+          { "baku": "Manajemen", "tidak_baku": "Managemen" },
+          { "baku": "Manajer", "tidak_baku": "Manager" },
+          { "baku": "Marginal", "tidak_baku": "Marjinal" },
+          { "baku": "Filsuf", "tidak_baku": "Filosof" },
+          { "baku": "Selebritas", "tidak_baku": "Selebritis" },
+          { "baku": "Seluler", "tidak_baku": "Selular" },
+          { "baku": "Sumatra", "tidak_baku": "Sumatera" },
+          { "baku": "Antre", "tidak_baku": "Antri" },
+          { "baku": "Asyik", "tidak_baku": "Asik" },
+          { "baku": "Karisma", "tidak_baku": "Kharisma" },
+          { "baku": "Orisinal", "tidak_baku": "Orisinil" },
+          { "baku": "Paham", "tidak_baku": "Faham" },
+          { "baku": "Survei", "tidak_baku": "Survey" },
+          { "baku": "Autobiografi", "tidak_baku": "Otobiografi" },
+          { "baku": "Autodidak", "tidak_baku": "Otodidak" },
+          { "baku": "Otomatis", "tidak_baku": "Automatis" },
+          { "baku": "Saksama", "tidak_baku": "Seksama" },
+          { "baku": "Sentimeter", "tidak_baku": "Centimeter" },
+          { "baku": "Samudra", "tidak_baku": "Samudera" },
+          { "baku": "Debitur", "tidak_baku": "Debitor" },
+          { "baku": "Detergen", "tidak_baku": "Deterjen" },
+          { "baku": "Diagnosis", "tidak_baku": "Diagnosa" },
+          { "baku": "Takhayul", "tidak_baku": "Tahayul" },
+          { "baku": "Takhta", "tidak_baku": "Tahta" },
+          { "baku": "Tampak", "tidak_baku": "Nampak" },
+          { "baku": "Bumper", "tidak_baku": "Bemper" },
+          { "baku": "Formal", "tidak_baku": "Formil" },
+          { "baku": "Hipotesis", "tidak_baku": "Hipotesa" },
+          { "baku": "Ijazah", "tidak_baku": "Ijasah" },
+          { "baku": "Ikhlas", "tidak_baku": "Ihlas" },
+          { "baku": "Izin", "tidak_baku": "Ijin" },
+          { "baku": "Kuesioner", "tidak_baku": "Kuisioner" },
+          { "baku": "Genius", "tidak_baku": "Jenius" },
+          { "baku": "Orang tua", "tidak_baku": "Orangtua" },
+          { "baku": "Perdesaan", "tidak_baku": "Pedesaan" },
+          { "baku": "Putra", "tidak_baku": "Putera" },
+          { "baku": "Balsam", "tidak_baku": "Balsem" },
+          { "baku": "Capai", "tidak_baku": "Capek" },
+          { "baku": "Cengkerama", "tidak_baku": "Cengkrama" },
+          { "baku": "Neto", "tidak_baku": "Netto" },
+          { "baku": "Penasihat", "tidak_baku": "Penasehat" },
+          { "baku": "Sediakala", "tidak_baku": "Sedia kala" },
+          { "baku": "Fotokopi", "tidak_baku": "Photokopi" },
+          { "baku": "Frekuensi", "tidak_baku": "Frekwensi" },
+          { "baku": "Himne", "tidak_baku": "Hymne" },
+          { "baku": "Terampil", "tidak_baku": "Trampil" },
+          { "baku": "Tetapi", "tidak_baku": "Tapi" },
+          { "baku": "Tobat", "tidak_baku": "Taubat" },
+          { "baku": "Glamor", "tidak_baku": "Glamour" },
+          { "baku": "Khawatir", "tidak_baku": "Kuwatir" },
+          { "baku": "Komoditas", "tidak_baku": "Komoditi" },
+          { "baku": "Kualitas", "tidak_baku": "Kwalitas" },
+          { "baku": "Oasis", "tidak_baku": "Oase" },
+          { "baku": "Perkedel", "tidak_baku": "Pergedel" },
+          { "baku": "Rapor", "tidak_baku": "Rapot" },
+          { "baku": "Tekad", "tidak_baku": "Tekat" },
+          { "baku": "Teknik", "tidak_baku": "Tekhnik" },
+          { "baku": "Teknologi", "tidak_baku": "Tekhnologi" },
+          { "baku": "Video", "tidak_baku": "Vidio" },
+          { "baku": "Vila", "tidak_baku": "Villa" },
+          { "baku": "Zaman", "tidak_baku": "Jaman" },
+          { "baku": "Aksesori", "tidak_baku": "Aksesoris" },
+          { "baku": "Ideologi", "tidak_baku": "Idiologi" },
+          { "baku": "Populer", "tidak_baku": "Popular" },
+          { "baku": "Reguler", "tidak_baku": "Regular" },
+          { "baku": "Satai", "tidak_baku": "Sate" },
+          { "baku": "Sentimental", "tidak_baku": "Sentimentil" },
+          { "baku": "Kesatria", "tidak_baku": "Ksatria" },
+          { "baku": "Masjid", "tidak_baku": "Mesjid" },
+          { "baku": "Putri", "tidak_baku": "Puteri" },
+          { "baku": "Renaisans", "tidak_baku": "Renaisan" },
+          { "baku": "Transpor", "tidak_baku": "Transport" },
+          { "baku": "Triliun", "tidak_baku": "Trilyun" },
+          { "baku": "Kompleks", "tidak_baku": "Komplek" },
+          { "baku": "Sirene", "tidak_baku": "Sirine" },
+          { "baku": "Kafeina", "tidak_baku": "Kafein" },
+          { "baku": "Strok", "tidak_baku": "Stroke" },
+          { "baku": "Urine", "tidak_baku": "Urin" },
+          { "baku": "Serdawa", "tidak_baku": "Sendawa" },
+          { "baku": "Nomor", "tidak_baku": "Nomer" },
+          { "baku": "Prancis", "tidak_baku": "Perancis" },
+          { "baku": "Tapak", "tidak_baku": "Napak" },
+          { "baku": "Telur", "tidak_baku": "Telor" },
+          { "baku": "Tradisional", "tidak_baku": "Tradisionil" },
+          { "baku": "Dukacita", "tidak_baku": "Duka cita" },
+          { "baku": "Kasatmata", "tidak_baku": "Kasat mata" },
+          { "baku": "Kacamata", "tidak_baku": "Kaca mata" },
+          { "baku": "Sepak bola", "tidak_baku": "Sepakbola" },
+          { "baku": "Wali kota", "tidak_baku": "Walikota" },
+          { "baku": "Adhesi", "tidak_baku": "Adesi" },
+          { "baku": "Artefak", "tidak_baku": "Artifak" },
+          { "baku": "Astronout", "tidak_baku": "Astronot" },
+          { "baku": "Ateis", "tidak_baku": "Atheis" },
+          { "baku": "Azan", "tidak_baku": "Adzan" },
+          { "baku": "Balig", "tidak_baku": "Baligh" },
+          { "baku": "Cecak", "tidak_baku": "Cicak" },
+          { "baku": "Cendera mata", "tidak_baku": "Cenderamata" },
+          { "baku": "Cengkih", "tidak_baku": "Cengkeh" },
+          { "baku": "Darmasiswa", "tidak_baku": "Darma siswa" },
+          { "baku": "Dolar", "tidak_baku": "Dollar" },
+          { "baku": "Gangster", "tidak_baku": "Gengster" },
+          { "baku": "Gereget", "tidak_baku": "Greget" },
+          { "baku": "Hangus", "tidak_baku": "Angus" },
+          { "baku": "Insaf", "tidak_baku": "Insyaf" },
+          { "baku": "Intens", "tidak_baku": "Inten" },
+          { "baku": "Jemaah", "tidak_baku": "Jamaah" },
+          { "baku": "Kakbah", "tidak_baku": "Kaabah" },
+          { "baku": "Karier", "tidak_baku": "Karir" },
+          { "baku": "Katapel", "tidak_baku": "Ketapel" },
+          { "baku": "Kendur", "tidak_baku": "Kendor" },
+          { "baku": "Korsleting", "tidak_baku": "Konsleting" },
+          { "baku": "Magrib", "tidak_baku": "Maghrib" },
+          { "baku": "Massal", "tidak_baku": "Masal" },
+          { "baku": "Meterai", "tidak_baku": "Meterai" },
+          { "baku": "Notula", "tidak_baku": "Notulen" },
+          { "baku": "Persepsi", "tidak_baku": "Presepsi" },
+          { "baku": "Resistans", "tidak_baku": "Resistan" },
+          { "baku": "Sutra", "tidak_baku": "Sutera" },
+          { "baku": "Umrah", "tidak_baku": "Umroh" },
+          { "baku": "Zamrud", "tidak_baku": "Jamrud" },
+          { "baku": "Mi", "tidak_baku": "Mie" },
+          { "baku": "Media sosial", "tidak_baku": "Sosial media" },
+          { "baku": "Budi daya", "tidak_baku": "Budidaya" },
+          { "baku": "Mengetwit", "tidak_baku": "Men-tweet" }
+        ]
+      },
+      "kuis": [
+        {
+          "id_pertanyaan": "KMS_001",
+          "pertanyaan": "Manakah kata yang BUKAN merupakan kata baku?",
+          "pilihan": [
+            "Praktik",
+            "Analisis",
+            "Nasihat",
+            "Resiko"
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Bentuk tidak baku dari 'Risiko' adalah 'Resiko'. 'Praktik', 'Analisis', dan 'Nasihat' sudah merupakan bentuk baku."
+        },
+        {
+          "id_pertanyaan": "KMS_002",
+          "pertanyaan": "Bentuk baku dari 'Antri' adalah...",
+          "pilihan": [
+            "Antre",
+            "Antri",
+            "Antre",
+            "Antrie"
+          ],
+          "jawaban_benar_index": 0,
+          "pembahasan": "Bentuk baku yang benar menurut KBBI adalah 'Antre' (menggunakan 'e')."
+        },
+        {
+          "id_pertanyaan": "KMS_003",
+          "pertanyaan": "Manakah penulisan gabungan kata yang TEPAT?",
+          "pilihan": [
+            "Orangtua",
+            "Tanda tangan",
+            "Kaca mata",
+            "Wali kota"
+          ],
+          "jawaban_benar_index": 3,
+          "pembahasan": "Berdasarkan daftar, 'Wali kota' adalah penulisan baku (dipisah). 'Orang tua' (dipisah), 'tandatangan' (dipisah, kecuali H-19), 'kacamata' (disatukan) adalah aturan yang benar."
+        }
+      ]
+    }
+  ]
+}

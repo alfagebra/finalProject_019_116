@@ -1,0 +1,72 @@
+import 'dart:convert';
+import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+class InAppNotification {
+  final String id;
+  final String title;
+  final String body;
+  final DateTime time;
+  bool read;
+
+  InAppNotification({required this.id, required this.title, required this.body, required this.time, this.read = false});
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'title': title,
+        'body': body,
+        'time': time.toIso8601String(),
+        'read': read,
+      };
+
+  static InAppNotification fromJson(Map<String, dynamic> j) => InAppNotification(
+      id: j['id'].toString(), title: j['title'] ?? '', body: j['body'] ?? '', time: DateTime.parse(j['time']), read: j['read'] ?? false);
+}
+
+class InAppNotificationService {
+  static const _kKey = 'in_app_notifications';
+  static final ValueNotifier<int> unreadCount = ValueNotifier<int>(0);
+
+  static Future<List<InAppNotification>> _readAll() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getStringList(_kKey) ?? [];
+    return raw.map((s) => InAppNotification.fromJson(jsonDecode(s) as Map<String, dynamic>)).toList();
+  }
+
+  static Future<void> _writeAll(List<InAppNotification> items) async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = items.map((i) => jsonEncode(i.toJson())).toList();
+    await prefs.setStringList(_kKey, raw);
+    unreadCount.value = items.where((i) => !i.read).length;
+  }
+
+  static Future<void> add(String title, String body) async {
+    final list = await _readAll();
+    final id = DateTime.now().millisecondsSinceEpoch.toString();
+    list.add(InAppNotification(id: id, title: title, body: body, time: DateTime.now()));
+    await _writeAll(list);
+  }
+
+  static Future<List<InAppNotification>> all() async => (await _readAll()).reversed.toList();
+
+  static Future<void> markAllRead() async {
+    final list = await _readAll();
+    for (var i in list) {
+      i.read = true;
+    }
+    await _writeAll(list);
+  }
+
+  static Future<void> markRead(String id) async {
+    final list = await _readAll();
+    final item = list.firstWhere((e) => e.id == id, orElse: () => InAppNotification(id: id, title: '', body: '', time: DateTime.now()));
+    item.read = true;
+    await _writeAll(list);
+  }
+
+  static Future<void> init() async {
+    // initialize unread count
+    final list = await _readAll();
+    unreadCount.value = list.where((i) => !i.read).length;
+  }
+}
