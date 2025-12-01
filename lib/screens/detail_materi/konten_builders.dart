@@ -53,7 +53,7 @@ class KontenBody extends StatelessWidget {
           children.add(_buildContent("Penjelasan", value));
           break;
         case 'contoh':
-          children.add(_buildContent("Contoh", value, bullet: '🧩'));
+          children.add(_buildContent("Contoh", value, bullet: '•'));
           break;
         case 'catatan':
           children.add(_buildContent("Catatan", value, bullet: '📝'));

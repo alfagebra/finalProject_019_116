@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import '../database/hive_database.dart';
 import '../widgets/custom_app_bar.dart';
 import 'edit_profile_screen.dart';
@@ -69,7 +70,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         kesanPesan = data['kesanPesan']?.toString();
         transactions = await HistoryService.getHistory(current);
         // prefer username-based history storage when available
-        final u = (data['username'] != null && data['username'].toString().isNotEmpty)
+        final u =
+            (data['username'] != null && data['username'].toString().isNotEmpty)
             ? data['username'].toString()
             : await hive.getUsername(current);
         if (u != null && u.isNotEmpty) {
@@ -89,14 +91,116 @@ class _ProfileScreenState extends State<ProfileScreen> {
     super.dispose();
   }
 
-  String _formatShortAmount(double value, String currency) => CurrencyUtils.short(value, currency);
+  String _formatShortAmount(double value, String currency) =>
+      CurrencyUtils.short(value, currency);
+
+  /// 🔹 Pilih gambar profil dari galeri atau kamera
+  Future<void> _pickProfileImage() async {
+    final ImagePicker picker = ImagePicker();
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          backgroundColor: const Color(0xFF00345B),
+          title: const Text(
+            'Pilih Foto Profil',
+            style: TextStyle(color: Colors.white),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                leading: const Icon(
+                  Icons.photo_library,
+                  color: Colors.orangeAccent,
+                ),
+                title: const Text(
+                  'Dari Galeri',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onTap: () async {
+                  Navigator.pop(context);
+                  final pickedFile = await picker.pickImage(
+                    source: ImageSource.gallery,
+                  );
+                  if (pickedFile != null) {
+                    await _saveProfileImage(pickedFile.path);
+                  }
+                },
+              ),
+              ListTile(
+                leading: const Icon(
+                  Icons.camera_alt,
+                  color: Colors.orangeAccent,
+                ),
+                title: const Text(
+                  'Ambil Foto',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onTap: () async {
+                  Navigator.pop(context);
+                  final pickedFile = await picker.pickImage(
+                    source: ImageSource.camera,
+                  );
+                  if (pickedFile != null) {
+                    await _saveProfileImage(pickedFile.path);
+                  }
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  /// 🔹 Simpan gambar profil ke Hive
+  Future<void> _saveProfileImage(String imagePath) async {
+    final hiveDb = HiveDatabase();
+    final currentEmail = await hiveDb.getCurrentUserEmail();
+
+    if (currentEmail != null && currentEmail.isNotEmpty) {
+      final userBox = await hiveDb.getUserBox();
+
+      // Update user data dengan profile image
+      if (userBox.containsKey(currentEmail)) {
+        final userData = userBox.get(currentEmail);
+        if (userData is Map) {
+          final updated = {
+            ...Map<String, dynamic>.from(userData),
+            'profile_image': imagePath,
+          };
+          await userBox.put(currentEmail, updated);
+        }
+      }
+
+      // Also save via HiveDatabase method
+      await hiveDb.setUserProfileImage(currentEmail, imagePath);
+    }
+
+    // Update state
+    setState(() {
+      profileImagePath = imagePath;
+    });
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Foto profil berhasil diperbarui!')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    if (_loading) return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    if (_loading)
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
 
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Profil Saya', backgroundColor: Color(0xFF012D5A)),
+      appBar: const CustomAppBar(
+        title: 'Profil Saya',
+        backgroundColor: Color(0xFF012D5A),
+      ),
       backgroundColor: const Color(0xFF001F3F),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -108,32 +212,95 @@ class _ProfileScreenState extends State<ProfileScreen> {
               children: [
                 // Profile card
                 Container(
-                  padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 16),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 18,
+                    horizontal: 16,
+                  ),
                   decoration: BoxDecoration(
                     color: const Color(0xFF00345B),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Column(
                     children: [
-                      CircleAvatar(
-                        radius: 48,
-                        backgroundColor: Colors.orangeAccent.withOpacity(0.12),
-                        backgroundImage: (profileImagePath != null && profileImagePath!.isNotEmpty)
-                            ? (File(profileImagePath!).existsSync() ? FileImage(File(profileImagePath!)) : AssetImage(profileImagePath!)) as ImageProvider
-                            : null,
-                        child: (profileImagePath == null || profileImagePath!.isEmpty)
-                            ? const Icon(Icons.person, color: Colors.orangeAccent, size: 48)
-                            : null,
+                      GestureDetector(
+                        onTap: _pickProfileImage,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            CircleAvatar(
+                              radius: 48,
+                              backgroundColor: Colors.orangeAccent.withOpacity(
+                                0.12,
+                              ),
+                              backgroundImage:
+                                  (profileImagePath != null &&
+                                      profileImagePath!.isNotEmpty)
+                                  ? (File(profileImagePath!).existsSync()
+                                            ? FileImage(File(profileImagePath!))
+                                            : AssetImage(profileImagePath!))
+                                        as ImageProvider
+                                  : null,
+                              child:
+                                  (profileImagePath == null ||
+                                      profileImagePath!.isEmpty)
+                                  ? const Icon(
+                                      Icons.person,
+                                      color: Colors.orangeAccent,
+                                      size: 48,
+                                    )
+                                  : null,
+                            ),
+                            Positioned(
+                              bottom: 0,
+                              right: 0,
+                              child: Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: Colors.orangeAccent,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: const Icon(
+                                  Icons.camera_alt,
+                                  color: Colors.white,
+                                  size: 16,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(height: 12),
-                      Text(username ?? 'User', style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                      Text(
+                        username ?? 'User',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       const SizedBox(height: 6),
-                      Text(email ?? '-', style: const TextStyle(color: Colors.white70)),
+                      Text(
+                        email ?? '-',
+                        style: const TextStyle(color: Colors.white70),
+                      ),
                       const SizedBox(height: 8),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                        decoration: BoxDecoration(border: Border.all(color: Colors.white24), borderRadius: BorderRadius.circular(20)),
-                        child: Text(isPremium ? 'Akun Premium' : 'Akun Reguler', style: TextStyle(color: isPremium ? Colors.orangeAccent : Colors.white70)),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white24),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          isPremium ? 'Akun Premium' : 'Akun Reguler',
+                          style: TextStyle(
+                            color: isPremium
+                                ? Colors.orangeAccent
+                                : Colors.white70,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -142,27 +309,61 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                 // Edit profile button (top-level action)
                 ElevatedButton.icon(
-                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const EditProfileScreen())).then((_) => _load()),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const EditProfileScreen(),
+                    ),
+                  ).then((_) => _load()),
                   icon: const Icon(Icons.edit, color: Colors.white),
-                  label: const Text('Edit Profil', style: TextStyle(color: Colors.white)),
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.orangeAccent, minimumSize: const Size.fromHeight(48)),
+                  label: const Text(
+                    'Edit Profil',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orangeAccent,
+                    minimumSize: const Size.fromHeight(48),
+                  ),
                 ),
                 const SizedBox(height: 12),
 
                 // Settings card
                 InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsDetailScreen())),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const SettingsDetailScreen(),
+                    ),
+                  ),
                   child: Container(
                     padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(color: const Color(0xFF00345B), borderRadius: BorderRadius.circular(12)),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                      Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
-                        Text('Pengaturan', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.bold)),
-                        SizedBox(height: 6),
-                        Text('Kelola izin Lokasi & Notifikasi', style: TextStyle(color: Colors.white70)),
-                      ]),
-                      const Icon(Icons.chevron_right, color: Colors.white54),
-                    ]),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF00345B),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              'Pengaturan',
+                              style: TextStyle(
+                                color: Colors.orangeAccent,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(height: 6),
+                            Text(
+                              'Kelola izin Lokasi & Notifikasi',
+                              style: TextStyle(color: Colors.white70),
+                            ),
+                          ],
+                        ),
+                        const Icon(Icons.chevron_right, color: Colors.white54),
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -170,81 +371,178 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 // Transactions card
                 Container(
                   padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(color: const Color(0xFF00345B), borderRadius: BorderRadius.circular(12)),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    const Text('Riwayat Transaksi', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    if (transactions.isEmpty)
-                      const Text('Belum ada transaksi.', style: TextStyle(color: Colors.white70))
-                    else
-                      Column(
-                        children: transactions.reversed.take(3).map((t) {
-                          return ListTile(
-                            tileColor: const Color(0xFF012D5A),
-                            title: Text(t.planName, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF00345B),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Riwayat Transaksi',
+                        style: TextStyle(
+                          color: Colors.orangeAccent,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      if (transactions.isEmpty)
+                        const Text(
+                          'Belum ada transaksi.',
+                          style: TextStyle(color: Colors.white70),
+                        )
+                      else
+                        Column(
+                          children: transactions.reversed.take(3).map((t) {
+                            return ListTile(
+                              tileColor: const Color(0xFF012D5A),
+                              title: Text(
+                                t.planName,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               subtitle: Text(
                                 _formatShortAmount(t.price, t.priceCurrency),
                                 style: const TextStyle(color: Colors.white70),
                               ),
-                            trailing: const Icon(Icons.chevron_right, color: Colors.white54),
-                            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => TransactionDetailScreen(history: t))),
-                          );
-                        }).toList(),
-                      )
-                  ]),
+                              trailing: const Icon(
+                                Icons.chevron_right,
+                                color: Colors.white54,
+                              ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) =>
+                                      TransactionDetailScreen(history: t),
+                                ),
+                              ),
+                            );
+                          }).toList(),
+                        ),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 16),
 
                 // Quiz history card
                 Container(
                   padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(color: const Color(0xFF00345B), borderRadius: BorderRadius.circular(12)),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    const Text('Riwayat Kuis', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    if (quizHistories.isEmpty)
-                      const Text('Belum ada riwayat kuis.', style: TextStyle(color: Colors.white70))
-                    else
-                      Column(
-                        children: quizHistories.reversed.take(3).map((q) {
-                          // q is expected to be a QuizHistory object
-                          final DateTime time = (q.time is DateTime) ? q.time : DateTime.parse(q.time.toString());
-                          final timeLabel = DateFormat('d MMM yyyy, HH:mm', 'id_ID').format(time);
-                          final correct = q.correct ?? 0;
-                          final total = q.total ?? 0;
-                          final percent = (total > 0) ? ((correct / total) * 100).round() : 0;
-                          final title = '$correct / $total benar';
-                          final subtitle = '$timeLabel • $percent%';
-                          return ListTile(
-                            tileColor: const Color(0xFF012D5A),
-                            title: Text(title, style: const TextStyle(color: Colors.white)),
-                            subtitle: Text(subtitle, style: const TextStyle(color: Colors.white70)),
-                            trailing: const Icon(Icons.chevron_right, color: Colors.white54),
-                            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizHistoryScreen())),
-                          );
-                        }).toList(),
-                      )
-                  ]),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF00345B),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Riwayat Kuis',
+                        style: TextStyle(
+                          color: Colors.orangeAccent,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      if (quizHistories.isEmpty)
+                        const Text(
+                          'Belum ada riwayat kuis.',
+                          style: TextStyle(color: Colors.white70),
+                        )
+                      else
+                        Column(
+                          children: quizHistories.reversed.take(3).map((q) {
+                            // q is expected to be a QuizHistory object
+                            final DateTime time = (q.time is DateTime)
+                                ? q.time
+                                : DateTime.parse(q.time.toString());
+                            final timeLabel = DateFormat(
+                              'd MMM yyyy, HH:mm',
+                              'id_ID',
+                            ).format(time);
+                            final correct = q.correct ?? 0;
+                            final total = q.total ?? 0;
+                            final percent = (total > 0)
+                                ? ((correct / total) * 100).round()
+                                : 0;
+                            final title = '$correct / $total benar';
+                            final subtitle = '$timeLabel • $percent%';
+                            return ListTile(
+                              tileColor: const Color(0xFF012D5A),
+                              title: Text(
+                                title,
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                              subtitle: Text(
+                                subtitle,
+                                style: const TextStyle(color: Colors.white70),
+                              ),
+                              trailing: const Icon(
+                                Icons.chevron_right,
+                                color: Colors.white54,
+                              ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const QuizHistoryScreen(),
+                                ),
+                              ),
+                            );
+                          }).toList(),
+                        ),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 16),
 
                 // Informasi (navigates to full screen)
                 InkWell(
                   borderRadius: BorderRadius.circular(12),
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const InformasiScreen())),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const InformasiScreen()),
+                  ),
                   child: Container(
                     padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(color: const Color(0xFF00345B), borderRadius: BorderRadius.circular(12)),
-                    child: Row(children: [
-                      Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        const Text('Informasi', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.bold)),
-                        const SizedBox(height: 8),
-                        const Text('Aplikasi: fix_eyd', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
-                        const SizedBox(height: 4),
-                        const Text('Versi: 0.1.0', style: TextStyle(color: Colors.white70)),
-                      ])),
-                      const Icon(Icons.info_outline, color: Colors.orangeAccent),
-                    ]),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF00345B),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'Informasi',
+                                style: TextStyle(
+                                  color: Colors.orangeAccent,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              const Text(
+                                'Aplikasi: fix_eyd',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              const Text(
+                                'Versi: 0.1.0',
+                                style: TextStyle(color: Colors.white70),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Icon(
+                          Icons.info_outline,
+                          color: Colors.orangeAccent,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 18),
@@ -252,14 +550,52 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 // Logout button
                 ElevatedButton.icon(
                   onPressed: () async {
+                    final confirmed = await showDialog<bool>(
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        backgroundColor: const Color(0xFF00345B),
+                        title: const Text(
+                          'Konfirmasi',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        content: const Text(
+                          'Anda yakin ingin keluar?',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.of(ctx).pop(false),
+                            child: const Text(
+                              'Batal',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () => Navigator.of(ctx).pop(true),
+                            child: const Text(
+                              'Keluar',
+                              style: TextStyle(color: Colors.redAccent),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+
+                    if (confirmed != true) return;
                     final hive = HiveDatabase();
                     await hive.logout();
                     if (!mounted) return;
                     Navigator.pushReplacementNamed(context, '/login');
                   },
                   icon: const Icon(Icons.logout, color: Colors.white),
-                  label: const Text('Keluar', style: TextStyle(color: Colors.white)),
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent, minimumSize: const Size.fromHeight(48)),
+                  label: const Text(
+                    'Keluar',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.redAccent,
+                    minimumSize: const Size.fromHeight(48),
+                  ),
                 ),
                 const SizedBox(height: 24),
               ],

@@ -15,6 +15,7 @@ import '../services/settings_service.dart';
 import 'payment_offer_screen.dart';
 import 'profile_map_screen.dart';
 import 'detail_materi_screen.dart';
+import 'notifications_screen.dart';
 
 class HomeTab extends StatefulWidget {
   final String username;
@@ -72,8 +73,6 @@ class _HomeTabState extends State<HomeTab> {
     SettingsService.allowLocation.removeListener(_allowLocationListener);
     super.dispose();
   }
-
-
 
   Future<void> _loadNearby() async {
     setState(() => _loadingNearby = true);
@@ -173,8 +172,11 @@ class _HomeTabState extends State<HomeTab> {
         final konten = t.konten;
         if (konten is List) {
           for (var item in konten) {
-              if (item is Map) {
-              final sub = ((item['sub_judul'] ?? item['jenis'] ?? item['nama']) ?? '').toString().toLowerCase();
+            if (item is Map) {
+              final sub =
+                  ((item['sub_judul'] ?? item['jenis'] ?? item['nama']) ?? '')
+                      .toString()
+                      .toLowerCase();
               if (sub.contains(q)) return true;
               // check other map values (descriptions)
               for (var v in item.values) {
@@ -190,7 +192,10 @@ class _HomeTabState extends State<HomeTab> {
             }
           }
         } else if (konten is Map) {
-          final sub = ((konten['sub_judul'] ?? konten['jenis'] ?? konten['nama']) ?? '').toString().toLowerCase();
+          final sub =
+              ((konten['sub_judul'] ?? konten['jenis'] ?? konten['nama']) ?? '')
+                  .toString()
+                  .toLowerCase();
           if (sub.contains(q)) return true;
           for (var v in konten.values) {
             if (v is String && v.toLowerCase().contains(q)) return true;
@@ -256,7 +261,13 @@ class _HomeTabState extends State<HomeTab> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Tempat Terdekat', style: TextStyle(color: Palette.accent, fontWeight: FontWeight.bold)),
+              Text(
+                'Tempat Terdekat',
+                style: TextStyle(
+                  color: Palette.accent,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               IconButton(
                 icon: Icon(Icons.refresh, color: Palette.mutedOnDark),
                 onPressed: _loadNearby,
@@ -268,55 +279,79 @@ class _HomeTabState extends State<HomeTab> {
           SizedBox(
             height: 72,
             child: _loadingNearby
-                ? Center(child: CircularProgressIndicator(color: Palette.accent))
+                ? Center(
+                    child: CircularProgressIndicator(color: Palette.accent),
+                  )
                 : _nearbyPlaces.isEmpty
-                    ? Text('Tidak ada tempat terdekat', style: TextStyle(color: Palette.mutedOnDark))
-                    : ListView.separated(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: _nearbyPlaces.length > 6 ? 6 : _nearbyPlaces.length,
-                        separatorBuilder: (_, __) => const SizedBox(width: 8),
-                        itemBuilder: (ctx, i) {
-                          final p = _nearbyPlaces[i];
-                          final name = (p['name'] ?? 'Tempat') as String;
-                          final dist = (p['distance'] as double? ?? 0.0);
-                          final distStr = dist >= 1000 ? '${(dist / 1000).toStringAsFixed(2)} km' : '${dist.round()} m';
-                          final icon = _iconForName(name);
-                          return GestureDetector(
-                            onTap: () {
-                              // open map view
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (_) => const ProfileMapScreen()),
-                              );
-                            },
-                            child: Container(
-                              width: 180,
-                              padding: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Palette.surface,
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: Row(
-                                children: [
-                                  Icon(icon, color: Palette.primary),
-                                  const SizedBox(width: 8),
-                                  Expanded(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text(name, style: TextStyle(color: Palette.onPrimary, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis),
-                                        const SizedBox(height: 4),
-                                        Text(distStr, style: TextStyle(color: Palette.mutedOnDark, fontSize: 12)),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
+                ? Text(
+                    'Tidak ada tempat terdekat',
+                    style: TextStyle(color: Palette.mutedOnDark),
+                  )
+                : ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _nearbyPlaces.length > 6
+                        ? 6
+                        : _nearbyPlaces.length,
+                    separatorBuilder: (_, __) => const SizedBox(width: 8),
+                    itemBuilder: (ctx, i) {
+                      final p = _nearbyPlaces[i];
+                      final name = (p['name'] ?? 'Tempat') as String;
+                      final dist = (p['distance'] as double? ?? 0.0);
+                      final distStr = dist >= 1000
+                          ? '${(dist / 1000).toStringAsFixed(2)} km'
+                          : '${dist.round()} m';
+                      final icon = _iconForName(name);
+                      return GestureDetector(
+                        onTap: () {
+                          // open map view
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const ProfileMapScreen(),
                             ),
                           );
                         },
-                      ),
+                        child: Container(
+                          width: 180,
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Palette.surface,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(icon, color: Palette.primary),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      name,
+                                      style: TextStyle(
+                                        color: Palette.onPrimary,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      distStr,
+                                      style: TextStyle(
+                                        color: Palette.mutedOnDark,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
           ),
         ],
       ),
@@ -325,10 +360,25 @@ class _HomeTabState extends State<HomeTab> {
 
   IconData _iconForName(String name) {
     final n = name.toLowerCase();
-    if (n.contains('kampus') || n.contains('universit') || n.contains('fakultas') || n.contains('sekolah')) return Icons.school;
-    if (n.contains('masjid') || n.contains('mushola') || n.contains('mosque') || n.contains('geraja') || n.contains('gereja')) return Icons.location_city;
-    if (n.contains('cafe') || n.contains('kedai') || n.contains('kantin') || n.contains('warung') || n.contains('kedai')) return Icons.local_cafe;
-    if (n.contains('perpus') || n.contains('perpustakaan')) return Icons.local_library;
+    if (n.contains('kampus') ||
+        n.contains('universit') ||
+        n.contains('fakultas') ||
+        n.contains('sekolah'))
+      return Icons.school;
+    if (n.contains('masjid') ||
+        n.contains('mushola') ||
+        n.contains('mosque') ||
+        n.contains('geraja') ||
+        n.contains('gereja'))
+      return Icons.location_city;
+    if (n.contains('cafe') ||
+        n.contains('kedai') ||
+        n.contains('kantin') ||
+        n.contains('warung') ||
+        n.contains('kedai'))
+      return Icons.local_cafe;
+    if (n.contains('perpus') || n.contains('perpustakaan'))
+      return Icons.local_library;
     if (n.contains('park') || n.contains('taman')) return Icons.park;
     return Icons.location_on;
   }
@@ -353,7 +403,12 @@ class _HomeTabState extends State<HomeTab> {
         ),
         IconButton(
           icon: const Icon(Icons.notifications_none, color: Colors.white),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const NotificationsScreen()),
+            );
+          },
         ),
       ],
     );
@@ -427,8 +482,12 @@ class _HomeTabState extends State<HomeTab> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: _filteredTopik.map((topik) {
         // find original index in the full materi list so numbering stays correct
-        final originalIndex = _materi!.rangkumanTopik.indexWhere((t) => t.topikId == topik.topikId);
-        final prevTopikId = originalIndex > 0 ? _materi!.rangkumanTopik[originalIndex - 1].topikId : null;
+        final originalIndex = _materi!.rangkumanTopik.indexWhere(
+          (t) => t.topikId == topik.topikId,
+        );
+        final prevTopikId = originalIndex > 0
+            ? _materi!.rangkumanTopik[originalIndex - 1].topikId
+            : null;
 
         return BabCardClean(
           topik: topik,
@@ -455,10 +514,14 @@ class _HomeTabState extends State<HomeTab> {
                 if (nextIndex < _materi!.rangkumanTopik.length) {
                   final nextTopik = _materi!.rangkumanTopik[nextIndex];
                   Map<String, dynamic> firstContent = {};
-                  if (nextTopik.konten is List && (nextTopik.konten as List).isNotEmpty) {
-                    firstContent = (nextTopik.konten as List)[0] as Map<String, dynamic>;
+                  if (nextTopik.konten is List &&
+                      (nextTopik.konten as List).isNotEmpty) {
+                    firstContent =
+                        (nextTopik.konten as List)[0] as Map<String, dynamic>;
                   } else if (nextTopik.konten is Map) {
-                    firstContent = Map<String, dynamic>.from(nextTopik.konten as Map);
+                    firstContent = Map<String, dynamic>.from(
+                      nextTopik.konten as Map,
+                    );
                   }
 
                   // Navigate to the first submateri of the next topik
@@ -475,7 +538,11 @@ class _HomeTabState extends State<HomeTab> {
 
                   // Mark progress as read for UX continuity
                   try {
-                    await ProgressService.saveProgress(nextTopik.topikId, 0, true);
+                    await ProgressService.saveProgress(
+                      nextTopik.topikId,
+                      0,
+                      true,
+                    );
                   } catch (_) {}
                   setState(() {});
                 }

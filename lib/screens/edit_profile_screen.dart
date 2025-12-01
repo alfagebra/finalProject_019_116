@@ -1,8 +1,6 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 // hive access via HiveDatabase
 import '../database/hive_database.dart';
-import 'package:image_picker/image_picker.dart';
 import '../services/user_status_service.dart';
 import '../widgets/custom_app_bar.dart';
 
@@ -17,7 +15,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   final _formKey = GlobalKey<FormState>();
   String? _username;
   String? _email;
-  String? _profileImagePath;
 
   @override
   void initState() {
@@ -31,99 +28,78 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     final userBox = await hiveDb.getUserBox();
     final currentEmail = await hiveDb.getCurrentUserEmail();
 
-    String? img;
-    if (currentEmail != null && currentEmail.isNotEmpty) {
-      img = await hiveDb.getUserProfileImage(currentEmail);
-    }
-
     setState(() {
       _username = userBox.get('username', defaultValue: 'User');
       _email = currentEmail ?? userBox.get('current_email', defaultValue: '-');
-      _profileImagePath = img ?? userBox.get('profile_image');
     });
-  }
-
-  /// 🔹 Pilih gambar profil
-  Future<void> _pickImage() async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
-    if (pickedFile != null) {
-      setState(() {
-        _profileImagePath = pickedFile.path;
-      });
-    }
   }
 
   /// 🔹 Simpan perubahan ke Hive
   Future<void> _saveProfile() async {
-    if (!_formKey.currentState!.validate()) return;
+    // Allow partial updates: if a field is left empty, keep existing value.
     _formKey.currentState!.save();
 
-  final hiveDb = HiveDatabase();
-  final userBox = await hiveDb.getUserBox();
-    // Simpan ke struktur user per-email jika ada, supaya perubahan
-    // username/profile terlihat di ProfileScreen yang membaca data per-email.
-    final oldEmail = (userBox.get('current_email') ?? '')
-        .toString()
-        .trim()
-        .toLowerCase();
-    final newEmail = (_email ?? '').toString().trim().toLowerCase();
-
-    if (oldEmail.isNotEmpty && userBox.containsKey(oldEmail)) {
-      // ambil existing map dan update
-      final existing = userBox.get(oldEmail);
-      if (existing is Map) {
-        final updated = {
-          ...Map<String, dynamic>.from(existing),
-          'username': _username?.trim() ?? '',
-          'email': newEmail,
-        };
-
-        if (newEmail.isNotEmpty && newEmail != oldEmail) {
-          // pindahkan ke key baru
-          await userBox.put(newEmail, updated);
-          await userBox.delete(oldEmail);
-        } else {
-          await userBox.put(oldEmail, updated);
-        }
-      }
-    } else if (newEmail.isNotEmpty) {
-      // tidak ada oldEmail => simpan minimal data di key baru
-      await userBox.put(newEmail, {
-        'username': _username?.trim() ?? '',
-        'email': newEmail,
-        'password': '',
-        'isPremium': false,
-        'progress': 0.0,
-        'createdAt': DateTime.now().toIso8601String(),
-      });
-    }
-
-    // update convenience/top-level keys as well
-    // update convenience/top-level keys as well
-    await userBox.put('username', _username);
-    await userBox.put(
-      'current_email',
-      newEmail.isNotEmpty ? newEmail : oldEmail,
-    );
-
-    // Save profile image per-user (preferred). Also update top-level key for
-    // backward compatibility.
-    final targetEmail = (newEmail.isNotEmpty ? newEmail : oldEmail);
-    if (targetEmail.isNotEmpty) {
-      await hiveDb.setUserProfileImage(targetEmail, _profileImagePath);
-    }
-    await userBox.put('profile_image', _profileImagePath);
+    await _applyProfileUpdates(newUsername: _username, newEmail: _email);
 
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Profil berhasil diperbarui!')),
     );
 
-    // Refresh global username notifier so other screens update immediately
-    await UserStatusService.refreshUsername();
+    Navigator.pop(context); // kembali ke ProfileScreen
+  }
 
-    Navigator.pop(context); // balik ke ProfileScreen
+  /// Apply only the provided (non-empty) updates to the stored user data.
+  Future<void> _applyProfileUpdates({String? newUsername, String? newEmail}) async {
+    final hiveDb = HiveDatabase();
+    final userBox = await hiveDb.getUserBox();
+
+    final rawCurrent = (userBox.get('current_email') ?? '').toString();
+    final oldEmail = rawCurrent.trim().toLowerCase();
+
+    final usernameToSet = (newUsername ?? '').toString().trim();
+    final emailToSet = (newEmail ?? '').toString().trim().toLowerCase();
+
+    // Fetch existing user map if present
+    Map<String, dynamic>? existingMap;
+    if (oldEmail.isNotEmpty && userBox.containsKey(oldEmail)) {
+      final e = userBox.get(oldEmail);
+      if (e is Map) existingMap = Map<String, dynamic>.from(e);
+    }
+
+    // If emailToSet provided and valid and different -> move key
+    if (emailToSet.isNotEmpty && emailToSet.contains('@')) {
+      // If existing map present, copy it to new key
+      final updated = existingMap != null ? {...existingMap} : <String, dynamic>{};
+      if (usernameToSet.isNotEmpty) updated['username'] = usernameToSet;
+      updated['email'] = emailToSet;
+
+      await userBox.put(emailToSet, updated);
+
+      // remove old key if different
+      if (oldEmail.isNotEmpty && oldEmail != emailToSet && userBox.containsKey(oldEmail)) {
+        await userBox.delete(oldEmail);
+      }
+
+      await userBox.put('current_email', emailToSet);
+    } else {
+      // No email change — update existing map if present
+      if (existingMap != null) {
+        final updated = {...existingMap};
+        if (usernameToSet.isNotEmpty) updated['username'] = usernameToSet;
+        // keep existing email
+        await userBox.put(oldEmail, updated);
+      }
+    }
+
+    // Update top-level convenience keys
+    if (usernameToSet.isNotEmpty) await userBox.put('username', usernameToSet);
+    if (existingMap != null && existingMap['profile_image'] != null) {
+      await userBox.put('profile_image', existingMap['profile_image']);
+    }
+
+    // Refresh username notifier
+    await UserStatusService.refreshUsername();
   }
 
   @override
@@ -141,30 +117,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           key: _formKey,
           child: Column(
             children: [
-              // 🔹 Foto profil
-              GestureDetector(
-                onTap: _pickImage,
-                child: CircleAvatar(
-                  radius: 60,
-                  backgroundColor: Colors.orangeAccent.withOpacity(0.2),
-                  backgroundImage: _profileImagePath != null
-                      ? FileImage(File(_profileImagePath!))
-                      : null,
-                  child: _profileImagePath == null
-                      ? const Icon(
-                          Icons.person,
-                          color: Colors.orangeAccent,
-                          size: 70,
-                        )
-                      : null,
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                "Ketuk foto untuk mengubah gambar profil",
-                style: TextStyle(color: Colors.white70, fontSize: 13),
-              ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 6),
 
               // 🔹 Field Username
               TextFormField(
@@ -180,12 +133,20 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   ),
                 ),
                 validator: (value) {
-                  if (value == null || value.isEmpty) {
+                  if (value != null && value.isNotEmpty && value.trim().isEmpty) {
                     return "Nama tidak boleh kosong";
                   }
                   return null;
                 },
                 onSaved: (val) => _username = val,
+                onFieldSubmitted: (val) async {
+                  final trimmed = val.trim();
+                  if (trimmed.isEmpty) return;
+                  await _applyProfileUpdates(newUsername: trimmed);
+                  if (!mounted) return;
+                  setState(() => _username = trimmed);
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Nama pengguna disimpan')));
+                },
               ),
               const SizedBox(height: 20),
 
@@ -203,10 +164,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   ),
                 ),
                 validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return "Email tidak boleh kosong";
-                  }
-                  if (!value.contains("@")) {
+                  if (value != null && value.isNotEmpty && !value.contains("@")) {
                     return "Format email tidak valid";
                   }
                   return null;

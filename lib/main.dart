@@ -5,15 +5,17 @@ import 'package:intl/date_symbol_data_local.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/splash_screen.dart';
 import 'screens/premium_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/register_screen.dart';
 import 'services/user_status_service.dart';
 import 'services/settings_service.dart';
 import 'database/hive_database.dart';
 import 'services/in_app_notification_service.dart';
 import 'services/notification_service.dart';
-import 'package:flutter/widgets.dart';
 
 // Global route observer used by screens that want to know when they become visible.
-final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
+final RouteObserver<ModalRoute<void>> routeObserver =
+    RouteObserver<ModalRoute<void>>();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -71,12 +73,61 @@ class EjaMateApp extends StatelessWidget {
         primaryColor: Palette.primary,
         scaffoldBackgroundColor: Palette.background,
         appBarTheme: const AppBarTheme(backgroundColor: Palette.primaryDark),
-        colorScheme: ColorScheme.fromSeed(seedColor: Palette.primary, primary: Palette.primary, secondary: Palette.accent),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Palette.primary,
+          primary: Palette.primary,
+          secondary: Palette.accent,
+        ),
       ),
       navigatorObservers: [routeObserver],
-      home: isPremium
-          ? PremiumScreen(username: username)
-          : const SplashScreen(),
+      home: SplashScreenWrapper(isPremium: isPremium, username: username),
+      routes: {
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+      },
     );
+  }
+}
+
+/// Splash screen wrapper that shows splash, then navigates to home or login
+class SplashScreenWrapper extends StatefulWidget {
+  final bool isPremium;
+  final String username;
+
+  const SplashScreenWrapper({
+    super.key,
+    required this.isPremium,
+    required this.username,
+  });
+
+  @override
+  State<SplashScreenWrapper> createState() => _SplashScreenWrapperState();
+}
+
+class _SplashScreenWrapperState extends State<SplashScreenWrapper> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(const Duration(seconds: 3), () {
+        if (!mounted) return;
+        if (widget.isPremium) {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (_) => PremiumScreen(username: widget.username),
+            ),
+          );
+        } else {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (_) => const LoginScreen()),
+          );
+        }
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const SplashScreen();
   }
 }

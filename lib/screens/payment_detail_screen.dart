@@ -238,7 +238,7 @@ class _PaymentDetailScreenState extends State<PaymentDetailScreen> {
             // Time zone selector (syncs with SettingsService)
             Row(
               children: [
-                const Text('Zona Waktu: ', style: TextStyle(color: Colors.white70)),
+                const Text('Zona Waktu: ', style: TextStyle(color: Colors.white)),
                 const SizedBox(width: 8),
                 ValueListenableBuilder<String>(
                   valueListenable: SettingsService.timeZone,
@@ -246,7 +246,10 @@ class _PaymentDetailScreenState extends State<PaymentDetailScreen> {
                     return DropdownButton<String>(
                       dropdownColor: const Color(0xFF001F3F),
                       value: tz,
-                      items: _timeZones.map((z) => DropdownMenuItem(value: z, child: Text(z))).toList(),
+                      style: const TextStyle(color: Colors.white),
+                      items: _timeZones
+                          .map((z) => DropdownMenuItem(value: z, child: Text(z, style: const TextStyle(color: Colors.white))))
+                          .toList(),
                       onChanged: (v) => v != null ? SettingsService.setTimeZone(v) : null,
                     );
                   },
@@ -384,7 +387,7 @@ class _PaymentDetailScreenState extends State<PaymentDetailScreen> {
                   ? _buildInvoiceRow(
                       "Waktu",
                       timeLabel,
-                      valueColor: Colors.orangeAccent,
+                      valueColor: Colors.white,
                     )
                   : const SizedBox.shrink();
             },
